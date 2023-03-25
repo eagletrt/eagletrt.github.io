@@ -1,0 +1,11 @@
+<model-viewer src="fenice_light.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="2" camera-target="0m 0.5m 0m" shadow-softness="0.4" auto-rotate min-camera-orbit="auto 75deg 6.406m" max-camera-orbit="auto 75deg auto" min-field-of-view="24.75deg" camera-orbit="-145deg 75deg 6.406m" field-of-view="24.75deg">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
