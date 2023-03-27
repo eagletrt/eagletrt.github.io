@@ -1,4 +1,4 @@
-/* Generated on: Mon Mar 27 2023 19:09:21 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Mon Mar 27 2023 19:13:24 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -1961,7 +1961,7 @@
    
      .render_3d {
        min-height: 35vh;
-       margin-top: -150px;
+       margin-top: -100px;
      }
    
      .social_icons_grid {
