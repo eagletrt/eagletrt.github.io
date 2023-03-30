@@ -34,6 +34,12 @@
             (n.className += t + "touch");
       })(window, document);
     </script>
+    <style>
+      .w-slider-dot {
+          width: 10px !important;
+          height: 10px !important;
+      }
+    </style>
   </head>
   <body class="body">
     <div
@@ -51,13 +57,13 @@
       >
         <div class="container">
           <div class="navbar-wrapper">
-            <a href="#" class="navbar-brand w-nav-brand"
+            <a href="/" class="navbar-brand w-nav-brand"
               ><img
-                src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401f2329a0224d916f7eebf_0-Eagle-white.svg"
+                src="./assets/logo/white_brand.svg"
                 loading="lazy"
                 height="75"
                 width="75"
-                alt=""
+                alt="eagle white brand logo"
             /></a>
             <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
               <ul role="list" class="nav-menu-two w-list-unstyled">
@@ -72,18 +78,15 @@
                 <li><a href="/per_le_aziende.html" aria-current="page" class="navbar_link w--current">Per le aziende</a></li>
                 <li><a href="/eventi.html" class="navbar_link">Eventi</a></li>
                 <li>
-                  <a href="#" class="w-inline-block"
+                  <a href="/en.html" class="w-inline-block"
                     ><img
-                      src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64045545156eb1f3eebb9646_english.png"
+                      src="./assets/icons/lang/en.png"
                       loading="eager"
                       width="25"
                       height="25"
-                      alt=""
+                      alt="united kingdom flag"
                       sizes="(max-width: 991px) 100vw, 25px"
-                      srcset="
-                        https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64045545156eb1f3eebb9646_english-p-500.png 500w,
-                        https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64045545156eb1f3eebb9646_english.png       512w
-                      "
+                      
                   /></a>
                 </li>
               </ul>
@@ -118,14 +121,14 @@
           ><div class="text-block_btn">Collabora</div>
           <div class="speedmeter_container">
             <img
-              src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6402066d095893f9c812d3fb_speedometer-0.png"
+              src="./assets/icons/speedometer-0.png"
               loading="lazy"
               width="20"
               height="20"
               alt=""
               class="speed_on-top"
             /><img
-              src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6402066dcfe25fcb08e0f4ec_speedometer-1.png"
+              src="./assets/icons/speedometer-1.png"
               loading="lazy"
               width="20"
               height="20"
@@ -160,14 +163,10 @@
             class="motivation_wrapper"
           >
             <img
-              src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64044e8a40112167148770d8_megaphone.png"
+            src="./assets/icons/megaphone.svg"
               loading="lazy"
               width="100"
               height="100"
-              srcset="
-                https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64044e8a40112167148770d8_megaphone-p-500.png 500w,
-                https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64044e8a40112167148770d8_megaphone.png       512w
-              "
               sizes="99.99999237060547px"
               alt=""
               class="motivation_icon"
@@ -184,14 +183,10 @@
             class="motivation_wrapper"
           >
             <img
-              src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64044e8abac136668781f1cd_handshake.png"
+            src="./assets/icons/handshake.svg"
               loading="lazy"
               width="100"
               height="100"
-              srcset="
-                https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64044e8abac136668781f1cd_handshake-p-500.png 500w,
-                https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64044e8abac136668781f1cd_handshake.png       512w
-              "
               sizes="99.99999237060547px"
               alt=""
               class="motivation_icon"
@@ -208,14 +203,10 @@
             class="motivation_wrapper"
           >
             <img
-              src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64044e8aab4b6327d2b60876_internship.png"
+              src="./assets/icons/internship.svg"
               loading="lazy"
               width="100"
               height="100"
-              srcset="
-                https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64044e8aab4b6327d2b60876_internship-p-500.png 500w,
-                https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64044e8aab4b6327d2b60876_internship.png       512w
-              "
               sizes="99.99999237060547px"
               alt=""
               class="motivation_icon"
@@ -231,12 +222,11 @@
         <img
           src="./assets/bg_img/sponsor_bg_img_top_right.svg"
           loading="lazy"
-          alt=""
-          class="bg_img center_right"
+class="bg_img center_right"
         />
       </div>
       <div class="template_section">
-        <h2 class="heading_template">Cosa dicono su di noi</h2>
+        <h2 class="heading_template">Cosa dicono di noi</h2>
         <div class="articles_wrapper">
           <div
             data-delay="6000"
@@ -253,8 +243,17 @@
           >
             <div class="mask w-slider-mask">
               <div class="article_slide w-slide">
-                <div class="slide_bg-image_container article w-container">
-                  <div class="date-block_slide_article">Settembre 2022</div>
+                <div class="slide_bg-image_container article w-container"
+                  style="
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(24, 24, 24, 0.95),
+                        rgba(24, 24, 24, 0.95) 45%,
+                        transparent
+                      ),
+                      url('./assets/articles/ildolomiti.jpg');
+                  ">
+                  <div class="date-block_slide_article">SET. 2022</div>
                   <div class="title-block_slide_article">Riflettori su E-Agle Team</div>
                   <a
                     href="https://www.ildolomiti.it/economia/2022/motori-e-piloti-allo-sport-tech-district-riflettori-su-e-agle-trento-racing-team-la-scuderia-universitaria-ha-raccontato-la-monoposto-elettrica-fenice"
@@ -265,26 +264,46 @@
                 </div>
               </div>
               <div class="article_slide w-slide">
-                <div class="slide_bg-image_container article w-container">
-                  <div class="date-block_slide_article">data</div>
+                <div class="slide_bg-image_container article w-container"
+                style="
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(24, 24, 24, 0.95),
+                        rgba(24, 24, 24, 0.95) 45%,
+                        transparent
+                      ),
+                      url('./assets/articles/motorsport.jpg');
+                      "
+                  >
+                  <div class="date-block_slide_article">LUG. 2022</div>
                   <div class="title-block_slide_article">Ecco i finalisti 2022</div>
                   <a
-                    href="http://google.com"
+                    href="https://it.motorsport.com/formula-sae-italia/news/formula-sae-chiusi-gli-eventi-statici-ecco-i-finalisti-2022/10339016/"
                     target="_blank"
                     class="source-block_slide_article"
-                    >SOURCE</a
+                    >it.motorsport.com</a
                   >
                 </div>
               </div>
               <div class="article_slide w-slide">
-                <div class="slide_bg-image_container article w-container">
-                  <div class="date-block_slide_article">data</div>
-                  <div class="title-block_slide_article">Event title</div>
+                <div class="slide_bg-image_container article w-container"
+                  style="
+                  background-image: linear-gradient(
+                      0deg,
+                      rgba(24, 24, 24, 0.95),
+                      rgba(24, 24, 24, 0.95) 45%,
+                      transparent
+                    ),
+                    url('./assets/articles/webmagazine.png');
+                  "
+                >
+                  <div class="date-block_slide_article">LUG. 2022</div>
+                  <div class="title-block_slide_article">Ci sarà anche E-Agle Team</div>
                   <a
-                    href="http://google.com"
+                    href="https://webmagazine.unitn.it/news/ateneo/111721/anche-il-team-e-agle-trt-di-unitrento-presente-all-edizione-2022-di-formula-sae"
                     target="_blank"
                     class="source-block_slide_article"
-                    >SOURCE</a
+                    >webmagazine.it</a
                   >
                 </div>
               </div>
@@ -304,19 +323,19 @@
         <div class="sub-sponsor_wrapper">
           <div class="brands_container">
             <img
-              src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64176f207b8e0176ab2b7cae_main_sponsors.svg"
+              src="./assets/sponsors/main_sponsors.svg"
               loading="lazy"
               width="500"
               alt=""
               class="brand_image"
             /><img
-              src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64176f20babae452fff3bd00_partners.svg"
+              src="./assets/sponsors/partners.svg"
               loading="lazy"
               width="500"
               alt=""
               class="brand_image"
             /><img
-              src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64176f205070929df6ada52b_supporters.svg"
+              src="./assets/sponsors/supporters.svg"
               loading="lazy"
               width="500"
               alt=""
@@ -327,8 +346,7 @@
         <img
           src="./assets/bg_img/sponsor_bg_img_right.svg"
           loading="lazy"
-          alt=""
-          class="bg_img top_right"
+class="bg_img top_right"
         />
       </div>
     </div>
@@ -445,7 +463,7 @@
     <div class="legal_font">© 2023 E-Agle. All rights reserved.</div>
     <div class="legal_font">P.IVA: 02446060226</div>
     <img
-      src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401f2329a0224d916f7eebf_0-Eagle-white.svg"
+      src="./assets/logo/white_brand.svg"
       loading="lazy"
       width="150"
       height="150"
