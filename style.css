@@ -3846,8 +3846,8 @@ body {
 }
 
 .ct_img_wrapper {
+  width: 225px;
   height: 300px;
-  max-width: 225px;
   text-align: center;
   background-image: linear-gradient(to top, #000, rgba(0, 0, 0, .8) 20%, rgba(0, 0, 0, 0)), url("https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/644ff166eb4edf50edd43442_0152.jpg");
   background-position: 0 0, 50%;
