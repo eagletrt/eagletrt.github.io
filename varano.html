@@ -133,6 +133,30 @@
       </div>
     </div>
     <div class="playground">
+      <div class="countdown_wrapper" style="margin-block-end:-75px;">
+        <h1>Deadline Vehicle Status Video</h1>
+        <div id="countdown" class="countdown">
+          <div class="time">
+            <p id="v_days"></p>
+            <p class="spelled">days</p>
+          </div>
+
+          <div class="time">
+            <p id="v_hours"></p>
+            <p class="spelled">hours</p>
+          </div>
+
+          <div class="time">
+            <p id="v_minutes"></p>
+            <p class="spelled">minutes</p>
+          </div>
+
+          <div class="time">
+            <p id="v_seconds"></p>
+            <p class="spelled">seconds</p>
+          </div>
+        </div>
+      </div>
       <div class="countdown_wrapper">
         <h1>Formula ATA: Varano De’ Melegari</h1>
 
@@ -329,6 +353,7 @@ target="_blank"
     </div>
     <!-- FOOTER ENDS -->
     <script>
+      // <!-- VARANO TIMER -->
       const days = document.getElementById("days");
       const hours = document.getElementById("hours");
       const minutes = document.getElementById("minutes");
@@ -355,6 +380,34 @@ target="_blank"
       }
 
       setInterval(updateCountdown, 1000);
+
+      // <!-- VECHICLE STATUS VIDEO TIMER -->
+      const v_days = document.getElementById("v_days");
+      const v_hours = document.getElementById("v_hours");
+      const v_minutes = document.getElementById("v_minutes");
+      const v_seconds = document.getElementById("v_seconds");
+
+      const v_currentYear = new Date().getFullYear();
+
+      const v_newYearTime = new Date(`July 07 ${currentYear} 00:00:00`);
+
+      // Update countdown time
+      function v_updateCountdown() {
+        const currentTime = new Date();
+        const diff = v_newYearTime - currentTime;
+
+        const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+        const h = Math.floor(diff / 1000 / 60 / 60) % 24;
+        const m = Math.floor(diff / 1000 / 60) % 60;
+        const s = Math.floor(diff / 1000) % 60;
+
+        v_days.innerHTML = d;
+        v_hours.innerHTML = h < 10 ? "0" + h : h;
+        v_minutes.innerHTML = m < 10 ? "0" + m : m;
+        v_seconds.innerHTML = s < 10 ? "0" + s : s;
+      }
+
+      setInterval(v_updateCountdown, 1000);
     </script>
     <script
       src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6401ed150a210b785600a87b"
