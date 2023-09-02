@@ -22,13 +22,14 @@
       gtag("config", "G-W23X3MK46Y");
     </script>
     <meta charset="utf-8" />
-    <title>E-Agle - Home</title>
+    <title>E-Agle - Team</title>
     <meta
       name="description"
-      content="We are a racing team composed exclusively of students attending the
-    University of Trento. We apply what we learn by building an electric
-    race car from scratch, to challenge universities around the world in
-    the antechamber to Formula 1: Formula Student."
+      content="Our team is composed by students attending the different departments
+  of the University of Trento. To date, we are more
+  than 90 students, who are working together a developing soft and hard
+  skills, getting ready to face the work environment right after
+  graduating. You absolutely have to join the E-Agle team!"
     />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
@@ -50,28 +51,42 @@
             (n.className += t + "touch");
       })(window, document);
     </script>
-    <script
-      type="module"
-      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
-    ></script>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <style>
+      .playground li {
+        list-style-image: url('/assets/icons/correct.png');
+      }
+    </style>
   </head>
   <body class="body">
-    <!-- PULSING ANIMATION BEGINS -->
-    <div
+    <script>      
+      const shareLink = async () => {
+        var text = "https://e-agle.webflow.io/en/join_us";
+        try {
+          await navigator.clipboard.writeText(text);
+          
+          // Alert the copied text
+          alert("Link copied to clipboard");
+        
+        } catch (err) {
+          console.error('Failed to copy: ', err);
+        }
+      };
+    </script>
+    <!-- LOADING ANIMATION -->
+    <!-- <div
       data-w-id="32410867-ff7c-f70b-3d4e-44a3a36e12b2"
       style="display: flex"
       class="loading_container"
     >
       <img
         src="../assets/logo/white_brand.svg"
-        loading="eager"
+        loading="lazy"
         data-w-id="dc0f2acc-ad5a-d8fd-ec81-53cf102ded8b"
-        alt=""
+        alt="eagle white brand logo"
         class="logo_pulsing"
       />
-    </div>
-    <!-- PULSING ANIMATION ENDS -->
+    </div> -->
     <div
       data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e"
       class="navbar-logo-left wf-section"
@@ -87,7 +102,7 @@
       >
         <div class="container">
           <div class="navbar-wrapper">
-            <a href="/en/" class="navbar-brand w-nav-brand"
+            <a href="/" class="navbar-brand w-nav-brand"
               ><img
                 src="../assets/logo/white_brand.svg"
                 loading="lazy"
@@ -98,17 +113,19 @@
             <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
               <ul role="list" class="nav-menu-two w-list-unstyled">
                 <li>
-                  <a
-                    href="/en/"
-                    aria-current="page"
-                    class="navbar_link w--current"
-                    >Home</a
-                  >
+                  <a href="/en/" class="navbar_link">Home</a>
                 </li>
                 <li>
                   <a href="/en/chi_siamo" class="navbar_link">About Us</a>
                 </li>
-                <li><a href="/en/team" class="navbar_link">Team</a></li>
+                <li>
+                  <a
+                    href="/en/team"
+                    aria-current="page"
+                    class="navbar_link w--current"
+                    >Team</a
+                  >
+                </li>
                 <li><a href="/en/garage" class="navbar_link">Garage</a></li>
                 <li>
                   <a href="/en/per_le_aziende" class="navbar_link"
@@ -117,14 +134,18 @@
                 </li>
                 <li><a href="/en/eventi" class="navbar_link">Events</a></li>
                 <li>
-                  <a href="../index" class="w-inline-block"
+                  <a href="/team" class="w-inline-block"
                     ><img
                       src="../assets/icons/lang/it.png"
                       loading="eager"
                       width="25"
                       height="25"
-                      alt="italy flag"
+                      alt="flag of italy"
                       sizes="(max-width: 991px) 100vw, 25px"
+                      srcset="
+                        ../assets/icons/lang/it.png 500w,
+                        ../assets/icons/lang/it.png 512w
+                      "
                   /></a>
                 </li>
               </ul>
@@ -144,185 +165,91 @@
       </div>
     </div>
     <div class="playground">
-      <div class="hero_section">
-        <div class="hero_title_container">
-          <img
-            src="../assets/logo_scritta.svg"
-            loading="lazy"
-            alt=""
-            class="background_image_brand"
-          />
-          <div class="render_3d">
-            <model-viewer
-              src="../assets/car_render/fenice_light.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              camera-controls
-              poster="../assets/car_render/fenice_poster.webp"
-              shadow-intensity="1"
-              camera-target="0.08989m 0.25m -1.594e-7m"
-              auto-rotate
-              camera-orbit="27.81deg 66.94deg 3.5m"
-              field-of-view="30deg"
-              min-camera-orbit="auto 75deg auto"
-              max-camera-orbit="auto 75deg auto"
-              min-field-of-view="30deg"
-              style="width: 100%; height: 100%; min-height: 30vh"
-            >
-              <div class="progress-bar" slot="progress-bar">
-                <div class="update-bar"></div>
-              </div>
-            </model-viewer>
-          </div>
-          <div class="hero_section_text-block">
-            We are a racing team composed exclusively of students attending the
-            University of Trento. We apply what we learn by building an electric
-            race car from scratch, to challenge universities around the world in
-            the antechamber to Formula 1: Formula Student.
-          </div>
-          <div class="arrow-down_container">
-            <img
-              src="../assets/arrow-down.svg"
-              loading="lazy"
-              width="25"
-              height="25"
-              sizes="(max-width: 767px) 24.999998092651367px, (max-width: 991px) 3vw, 24.999998092651367px"
-              alt=""
-            />
-          </div>
+      <div class="join_us_hero_div" style="background-image: linear-gradient(to top, #181818, rgba(255, 255, 255, 0)), url('/assets/team_img.jpg');">
+        <div class="buttons_wrapper_hero_section">
+            <a data-w-id="ba0626b3-0022-27e0-587d-19004350a496" href="https://airtable.com/shrorVpRaW3HqUUfT" class="secondary_btn apply_btn w-inline-block">
+                <div class="text-block_btn">Apply</div>
+            </a>
+            <a data-w-id="cb12c69c-7e05-5f99-63e1-1be54638f6c6" onclick="shareLink()" class="secondary_btn share_btn w-inline-block">
+                <div class="text-block_btn share_btn">Share</div>
+                <img src="/assets/icons/share.png" loading="lazy" width="20" height="20" alt="" class="share_icon"/>
+            </a>
         </div>
-      </div>
-      <div class="template_section">
-        <h2 class="heading_template">About Us</h2>
+    </div>
+    <div class="template_section competition_structure">
+        <h2 class="heading_template">General Requirements</h2>
         <div class="text-block_template">
-          We are a team of more than 90 students attending the University of
-          Trento. We belong to different departments, ranging from engineering,
-          economics and beyond. Since 2016, we have been aiming to promote
-          sustainable mobility, engaging each year in the design and creation of
-          an electric race car, with which we compete with universities around
-          the world in the Formula Student championship.<br />‍<br />
-          Formula Student is the perfect arena for us to get involved as it
-          allows us to test and improve our skills in a hands-on setting, like a
-          real company. Through this project we develop skills that are
-          definitely useful in a business setting, such as: managing pressure
-          regarding deadlines, collaborating among multiple specialized
-          teams.<br />‍<br />
-          This experience trains the engineers and managers of the future!<br />‍<br />"We
-          go in as students and come out as professionals."
+            We are a 100% student-run motorsport team that operates like an independent company. Think something like F1, just on a much smaller scale.
+            <br/>
+            Being part of the team comes with a lot of work to do, but also great satisfaction.
+            <br/>
+            <br/>
+            These are the key elements which are required for all applicants:
+            <br/>
         </div>
-        <a
-          href="/en/chi_siamo"
-          target="_blank"
-          class="secondary_btn w-inline-block"
-          ><div class="text-block_btn">Find out more</div>
-          <div class="speedmeter_container">
-            <img
-              src="../assets/icons/speedometer-0.png"
-              loading="lazy"
-              width="20"
-              height="20"
-              alt="speedometer low"
-              class="speed_on-top"
-            /><img
-              src="../assets/icons/speedometer-1.png"
-              loading="lazy"
-              width="20"
-              height="20"
-              alt="speedometer high"
-              class="speed_below speed_icon"
-            /></div></a
-        ><img
-          src="../assets/bg_img/home_page_bg_img_right.svg"
-          loading="lazy"
-          alt=""
-          class="bg_img bottom_right"
-        />
-      </div>
-      <div class="clip_section">
-        <div
-          data-poster-url="../assets/bg_clip/poster.jpg"
-          data-video-urls="../assets/bg_clip/bg_clip-transcode.mp4,./assets/bg_clip/bg_clip-transcode.webm"
-          data-autoplay="true"
-          data-loop="true"
-          data-wf-ignore="true"
-          class="background-video w-background-video w-background-video-atom"
-        >
-          <video
-            id="707b3d8c-8f7b-7838-eb47-4af2823d223c-video"
-            autoplay=""
-            loop=""
-            style="background-image: url('./assets/bg_clip/poster.jpg')"
-            muted=""
-            playsinline=""
-            data-wf-ignore="true"
-            data-object-fit="cover"
-          >
-            <source
-              src="../assets/bg_clip/bg_clip-transcode.mp4"
-              data-wf-ignore="true"
-            />
-            <source
-              src="../assets/bg_clip/bg_clip-transcode.webm"
-              data-wf-ignore="true"
-            />
-          </video>
-          <div class="numbers_showcase-div">
-            <div class="single-number_wrapper">
-              <div class="digit_showcase">90</div>
-              <div class="text-block_showcase">team<br />members</div>
-            </div>
-            <div class="single-number_wrapper">
-              <div class="digit_showcase">8</div>
-              <div class="text-block_showcase">competitions<br />‍</div>
-            </div>
-            <div class="single-number_wrapper">
-              <div class="digit_showcase">5</div>
-              <div class="text-block_showcase">visited<br />countries</div>
-            </div>
-          </div>
+        <ul role="list">
+            <li class="requirement_list_item">
+                <strong class="title_req">Strong motivation</strong>
+                <br/>
+                Building a Formula Student car and taking it to competitions requires a lot of effort by the whole team.
+            </li>
+            <li class="requirement_list_item">
+                <strong class="title_req">
+                    Ability to work in a group
+                    <br/>
+                </strong>
+                We are looking for team players to assemble a group able to compete with other universities from all over the world.
+            </li>
+            <li class="requirement_list_item">
+                <strong class="title_req">
+                    Willingness to learn new things on your own
+                    <br/>
+                </strong>
+                This is a highly complex project run by people who are still learning. Therefore, members often need to study concepts or develop skills from scratch.
+            </li>
+            <li class="requirement_list_item">
+                <strong class="title_req">
+                    Personal initiative
+                    <br/>
+                </strong>
+                We both encourage and expect members to be proactive in their contributions to the team.
+            </li>
+            <li class="requirement_list_item">
+                <strong class="title_req">
+                    English proficiency
+                    <br/>
+                </strong>
+                English is the official language of the Formula Student community. A good level is required to work in any area of the team.
+            </li>
+        </ul>
+        <img src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/641b18a0e93efa3b4289e653_chi_siamo_bg_img_right.svg" loading="lazy" alt="" class="bg_img center_right"/>
+    </div>
+    <div class="template_section competition_structure">
+        <h2 class="heading_template">Mechanics Team</h2>
+        <div class="text-block_template">
+            The mechanics team is responsible for the design, simulation, manufacturing and assembly of all the car&#x27;s mechanical components such as the chassis, transmission, braking and steering system, suspensions and aerodynamics
+            <br/>
         </div>
-      </div>
-      <div class="sponsors_container">
-        <h2 class="heading_sponsor">Our Sponsor</h2>
-        <div class="sub-sponsor_wrapper">
-          <div class="brands_container">
-            <img
-              src="../assets/sponsors/main.svg"
-              loading="lazy"
-              width="500"
-              alt=""
-              class="brand_image"
-            />
-            <img
-              src="../assets/sponsors/gold.svg"
-              loading="lazy"
-              width="500"
-              alt=""
-              class="brand_image"
-            />
-            <img
-              src="../assets/sponsors/silver.svg"
-              loading="lazy"
-              width="500"
-              alt=""
-              class="brand_image"
-            />
-            <img
-              src="../assets/sponsors/bronze.svg"
-              loading="lazy"
-              width="500"
-              alt=""
-              class="brand_image"
-            />
-          </div>
-        </div>
-        <img
-          src="../assets/bg_img/home_page_bg_img_left.svg"
-          loading="lazy"
-          alt=""
-          class="bg_img bottom_left"
-        />
-      </div>
+        <h4 class="title_skills_req">
+            <strong>Skills and areas of knowledge required to be able to join this team:</strong>
+        </h4>
+        <ul role="list">
+            <li class="requirement_list_item">Personal initiative to work, even independently, combined with sufficient self- critique to prevent mistakes.</li>
+            <li class="requirement_list_item">Practical knowledge in the design and manufacturing of mechanical components.</li>
+            <li class="requirement_list_item">Particular attention will be given to the following aspects of components: weight and type of stress to which they are subjected, dimensions, ease of assembly, machining tolerances and defects or natural discrepancies between the CAD project and the final model of the car or its subassemblies.</li>
+            <li class="requirement_list_item">Assembly design, synergistically integrating the various parts.</li>
+            <li class="requirement_list_item">Knowledge of software for 3D CAD such as Autodesk Inventor, Solidworks or Siemens NX.</li>
+        </ul>
+        <h4 class="title_skills_req">
+            <strong>The following areas of expertise will be required depending on the specific role within the mechanics team:</strong>
+        </h4>
+        <ul role="list">
+            <li class="requirement_list_item">Practical skills such as painting, mould preparation, carbon fibre lamination and use of power tools</li>
+            <li class="requirement_list_item">FEM and CFD analysis with software such as Ansys or starccm+</li>
+            <li class="requirement_list_item">Topological optimisation</li>
+            <li class="requirement_list_item">Usage of software such as Mathematica or similar for kinematic analysis oncomponents’ stresses</li>
+        </ul>
+        <img src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/641b18a09c57d7e932a60deb_chi_siamo_bg_img_left.svg" loading="lazy" alt="" class="bg_img up_left"/>
     </div>
     <!-- FOOTER BEGINS -->
     <div class="footer">
@@ -337,7 +264,7 @@
             href="https://goo.gl/maps/ZwzsZx3RUqU9Xk5A7"
             aria-label="get directions to field office"
             class="inline_icon_text-footer w-inline-block"
-target="_blank"
+            target="_blank"
             ><div class="text-block_footer">
               via Sommarive, 9 - 38123 Povo (TN) - Italy
             </div></a
@@ -352,7 +279,7 @@ target="_blank"
             href="https://goo.gl/maps/ogMA9oWj6gYVjdmLA"
             aria-label="get directions to legal office"
             class="inline_icon_text-footer w-inline-block"
-target="_blank"
+            target="_blank"
             ><div class="text-block_footer">
               via Fortunato Zeni, 8 - 38068 Rovereto (TN) - Italy
             </div></a
@@ -367,12 +294,12 @@ target="_blank"
             href="mailto:fsae@eagletrt.it?subject=Reaching%20you%20out%20because%20of%20the%20website!"
             aria-label="email us"
             class="inline_icon_text-footer w-inline-block"
-target="_blank"
+            target="_blank"
             ><div class="text-block_footer">fsae@eagletrt.it</div></a
           ><a
             href="tel:+390461285271"
             class="inline_icon_text-footer w-inline-block"
-target="_blank"
+            target="_blank"
             ><div class="text-block_footer">+39 0461 285271</div></a
           >
         </div>
@@ -382,7 +309,7 @@ target="_blank"
           href="https://github.com/eagletrt"
           aria-label="see out github organization"
           class="inline_icon_text-footer w-inline-block"
-target="_blank"
+          target="_blank"
           ><img
             src="../assets/social_media_icons/github.png"
             loading="lazy"
@@ -395,7 +322,7 @@ target="_blank"
           href="https://www.youtube.com/@eagletrt"
           aria-label="check out our youtube channel"
           class="inline_icon_text-footer w-inline-block"
-target="_blank"
+          target="_blank"
           ><img
             src="../assets/social_media_icons/youtube.png"
             loading="lazy"
@@ -408,7 +335,7 @@ target="_blank"
           href="https://www.instagram.com/eagletrt/"
           aria-label="check out our instagram page"
           class="inline_icon_text-footer w-inline-block"
-target="_blank"
+          target="_blank"
           ><img
             src="../assets/social_media_icons/instagram.png"
             loading="lazy"
@@ -417,12 +344,11 @@ target="_blank"
             sizes="35px"
             alt=""
             class="social_media_icon-footer" /></a
-        >
-        <a
+        ><a
           href="https://www.linkedin.com/company/eagletrentoracingteam/"
           aria-label="check out our linkedin page"
           class="inline_icon_text-footer w-inline-block"
-target="_blank"
+          target="_blank"
           ><img
             src="../assets/social_media_icons/linkedin.png"
             loading="lazy"
@@ -431,12 +357,11 @@ target="_blank"
             sizes="35px"
             alt=""
             class="social_media_icon-footer"
-        /></a>
-        <a
+        /></a><a
           href="https://www.facebook.com/eagletrt/"
           aria-label="check out our facebook page"
           class="inline_icon_text-footer w-inline-block"
-target="_blank"
+          target="_blank"
           ><img
             src="../assets/social_media_icons/facebook.png"
             loading="lazy"
@@ -445,21 +370,20 @@ target="_blank"
             sizes="35px"
             alt=""
             class="social_media_icon-footer" /></a
-        >
-        <a
-          href="https://www.tiktok.com/@eagletrt?lang=en"
-          aria-label="check out our tiktok page"
-          class="inline_icon_text-footer w-inline-block"
-target="_blank"
-          ><img
-            src="../assets/social_media_icons/tik-tok.png"
-            loading="lazy"
-            width="Auto"
-            height="Auto"
-            sizes="35px"
-            alt=""
-            class="social_media_icon-footer" /></a
-        >
+        ><a
+        href="https://www.tiktok.com/@eagletrt?lang=en"
+        aria-label="check out our tik-tok page"
+        class="inline_icon_text-footer w-inline-block"
+        target="_blank"
+        ><img
+          src="/assets/social_media_icons/tik-tok.png"
+          loading="lazy"
+          width="Auto"
+          height="Auto"
+          sizes="35px"
+          alt=""
+          class="social_media_icon-footer" /></a
+      >
       </div>
       <div class="horizontal_separator"></div>
       <div class="legal_wrapper">

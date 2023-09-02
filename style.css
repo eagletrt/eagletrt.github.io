@@ -198,27 +198,27 @@ td, th {
 }
 
 .w-icon-slider-right:before {
-  content: "î˜€";
+  content: "";
 }
 
 .w-icon-slider-left:before {
-  content: "î˜";
+  content: "";
 }
 
 .w-icon-nav-menu:before {
-  content: "î˜‚";
+  content: "";
 }
 
 .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-  content: "î˜ƒ";
+  content: "";
 }
 
 .w-icon-file-upload-remove:before {
-  content: "î¤€";
+  content: "";
 }
 
 .w-icon-file-upload-icon:before {
-  content: "î¤ƒ";
+  content: "";
 }
 
 * {
@@ -537,10 +537,6 @@ label {
   opacity: 1;
 }
 
-.w-input:-ms-input-placeholder, .w-select:-ms-input-placeholder {
-  color: #999;
-}
-
 .w-input::-webkit-input-placeholder, .w-select::-webkit-input-placeholder {
   color: #999;
 }
@@ -594,11 +590,8 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-radio-input {
-  margin: 4px 0 0;
-  margin-top: 1px \9 ;
   float: left;
-  margin-top: 3px;
-  margin-left: -20px;
+  margin: 3px 0 0 -20px;
   line-height: normal;
 }
 
@@ -1458,7 +1451,6 @@ textarea.w-input, textarea.w-select {
   opacity: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
   background: rgba(0, 0, 0, .9);
   outline: 0;
@@ -2272,6 +2264,15 @@ body {
   display: flex;
 }
 
+.secondary_btn.apply_btn {
+  margin-right: 25px;
+}
+
+.secondary_btn.share_btn {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #fff;
+}
+
 .image {
   opacity: 1;
 }
@@ -2306,6 +2307,10 @@ body {
 .text-block_btn {
   color: #181818;
   letter-spacing: .5px;
+}
+
+.text-block_btn.share_btn {
+  color: #fff;
 }
 
 .template_section {
@@ -3849,7 +3854,7 @@ body {
   width: 225px;
   height: 300px;
   text-align: center;
-  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, .8) 20%, rgba(0, 0, 0, 0)), url("https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/644ff166eb4edf50edd43442_0152.jpg");
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, .8) 25%, rgba(0, 0, 0, 0)), url("https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/644ff166eb4edf50edd43442_0152.jpg");
   background-position: 0 0, 50%;
   background-size: auto, cover;
 }
@@ -3880,6 +3885,47 @@ body {
 
 .image-27 {
   margin-top: 60px;
+}
+
+.join_us_hero_image {
+  max-height: 350px;
+  min-width: 100%;
+}
+
+.requirement_list_item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+.title_req {
+  font-size: 1.25rem;
+}
+
+.div-block-3 {
+  min-height: 350px;
+  min-width: 100%;
+}
+
+.join_us_hero_div {
+  height: 450px;
+  min-width: 100%;
+  background-image: linear-gradient(to top, #181818, rgba(255, 255, 255, 0) 75%), url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  justify-content: center;
+  padding: 50px;
+  display: flex;
+}
+
+.buttons_wrapper_hero_section {
+  width: 100%;
+  max-width: 1150px;
+  min-height: 100%;
+  align-items: flex-end;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
 }
 
 @media screen and (min-width: 1440px) {
@@ -4522,7 +4568,7 @@ body {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-a23f7be6-0a4c-cf5b-ac49-2b7b771c4268-0700a87c, #w-node-_585bd03f-caad-dd06-5c57-f35a35ed1680-0700a87c, #w-node-_6cf7c56d-95e4-e27b-2c11-2635a4ba103b-0700a87c, #w-node-_36cfa6c3-8cf0-87b8-44dd-6a3cb1bb401b-0700a87c, #w-node-bac9a588-126f-42f7-c47a-487f89cff46d-0700a87c, #w-node-_07d997b1-eaca-10b1-c2f4-81fcf920227a-0700a87c, #w-node-bfd350e6-fbfe-05dd-dc5d-972f28332f17-0700a87c {
+#w-node-a23f7be6-0a4c-cf5b-ac49-2b7b771c4268-0700a87c {
   justify-self: auto;
 }
 
@@ -4540,4 +4586,103 @@ body {
   #w-node-_48886e7e-9ed8-dbf4-2e19-550300a18448-0ff50d37 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
+}
+
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1c66ffba68e081c706_HelveticaNeue-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1c6903b0267218130b_HelveticaNeue-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1caa6ab9228d2a60d9_HelveticaNeue-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1de6c51028a89c6883_HelveticaNeue-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1c57fbcb82b8501423_HelveticaNeue-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1ddb92db02f1728690_HelveticaNeue-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue Condensed';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1c8f2d073449bc603f_HelveticaNeue-CondensedBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue Condensed';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1c1c5489ecc5d60aaf_HelveticaNeue-CondensedBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1c50eec8e5050af56c_HelveticaNeue-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1da043692b801c0060_HelveticaNeue-RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1d96905f66e0aa1d56_HelveticaNeue-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1d1c548969fad60ab0_HelveticaNeue-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1d96905fb025aa1d5b_HelveticaNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/6401ef1dfa4f6eef6995aef4_HelveticaNeue-UltraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
 }
