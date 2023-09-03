@@ -53,11 +53,95 @@
     </script>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <style>
-      .playground li {
-        list-style-image: url('/assets/icons/correct.svg');
-
+      .main__item {
+        background: var(--white);
+        display: flex;
+        align-items: center;
+        margin-inline-end: 20px;
       }
-    </style>
+
+      .main__item svg {
+          width: 24px;
+          height: 24px;
+          stroke: #fff;
+          stroke-width: 2.5;
+          stroke-linecap: round;
+          stroke-linejoin: miter;
+          fill: none;
+      }
+      
+      .team_anchor_requirements:hover .main__item svg  {
+        stroke: #000;
+      }
+      
+      /* .playground li {
+        list-style-type: none;
+        line-height: 35px;
+      } */
+
+      .main__item.li {
+        background: var(--white);
+        display: flex;
+        align-items: center;
+      }
+      
+      .main__item.li svg {
+        width: 20px;
+        height: 20px;
+        stroke: #f3ff14;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: miter;
+        fill: none;
+        margin-inline-end: 15px;
+      }
+
+      .main__item.call_action {
+        background: var(--white);
+        display: flex;
+        align-items: center;
+
+        margin-inline-end: 0px;
+      }
+      
+      .main__item.call_action svg {
+        width: 28px;
+        height: 28px;
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: miter;
+        fill: none;
+      }
+
+      .secondary_btn.apply_btn.call_action{
+        margin-inline-end: -25px;
+      }
+
+      .secondary_btn.apply_btn.call_action:hover{
+        stroke: #000;
+      }
+
+      .secondary_btn.apply_btn.call_action:hover .main__item.call_action svg  {
+        stroke: #000;
+      }
+
+      .secondary_btn.apply_btn:hover .text-block_btn {
+        text-decoration: underline;
+      }
+
+      .secondary_btn.share_btn:hover .text-block_btn.share_btn {
+        text-decoration: underline;
+      }
+
+      .secondary_btn.apply_btn.call_action {
+        color: white;
+      }
+
+      .secondary_btn.apply_btn.call_action:hover .text-block_btn.call_action{
+        text-decoration: none;
+      }
+      </style>
   </head>
   <body class="body">
     <script>      
@@ -194,28 +278,28 @@
                 <!-- <br/>
                 Building a Formula Student car and taking it to competitions requires a lot of effort by the whole team. -->
             </li>
-            <li class="requirement_list_item">
+           <li class="requirement_list_item">
                 <strong class="title_req">
                     Ability to work in a group
                     <br/>
                 </strong>
                 <!-- We are looking for team players to assemble a group able to compete with other universities from all over the world. -->
             </li>
-            <li class="requirement_list_item">
+           <li class="requirement_list_item">
                 <strong class="title_req">
                     Willingness to learn new things on your own
                     <br/>
                 </strong>
                 <!-- This is a highly complex project run by people who are still learning. Therefore, members often need to study concepts or develop skills from scratch. -->
             </li>
-            <li class="requirement_list_item">
+           <li class="requirement_list_item">
                 <strong class="title_req">
                     Personal initiative
                     <br/>
                 </strong>
                 <!-- We both encourage and expect members to be proactive in their contributions to the team. -->
             </li>
-            <li class="requirement_list_item">
+           <li class="requirement_list_item">
                 <strong class="title_req">
                     English proficiency
                     <br/>
@@ -226,7 +310,76 @@
         <img src="/assets/bg_img/chi_siamo_bg_img_right.svg" loading="lazy" alt="" class="bg_img center_right"/>
     </div>
     <div class="template_section competition_structure">
-        <h2 class="heading_template">Mechanics Team</h2>
+      <h2>Jump straight to what you are looking for</h2>
+      <img src="https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/641b18a0e93efa3b4289e653_chi_siamo_bg_img_right.svg" loading="lazy" alt="" class="bg_img center_right">
+      <div class="team_info_wrapper_recruitment">
+        <a href="#mechanics" class="team_anchor_requirements w-inline-block">
+          <div class="main__item"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle">
+            <title id="arrowRightIconTitle">Arrow Right</title>
+            <path d="M15 18l6-6-6-6"></path>
+            <path d="M3 12h17"></path>
+            <path stroke-linecap="round" d="M21 12h-1"></path>
+          </svg></div>
+          <div class="text_team_anchor">Mechanics Team</div>
+        </a>
+        <a href="#electronics" class="team_anchor_requirements w-inline-block">
+          <div class="main__item"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle">
+            <title id="arrowRightIconTitle">Arrow Right</title>
+            <path d="M15 18l6-6-6-6"></path>
+            <path d="M3 12h17"></path>
+            <path stroke-linecap="round" d="M21 12h-1"></path>
+          </svg></div>
+          <div class="text_team_anchor">Electronics Team</div>
+        </a>
+        <a href="#software" class="team_anchor_requirements w-inline-block">
+          <div class="main__item"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle">
+            <title id="arrowRightIconTitle">Arrow Right</title>
+            <path d="M15 18l6-6-6-6"></path>
+            <path d="M3 12h17"></path>
+            <path stroke-linecap="round" d="M21 12h-1"></path>
+          </svg></div>
+          <div class="text_team_anchor">Software Team</div>
+        </a>
+        <a href="#dynamics" class="team_anchor_requirements w-inline-block">
+          <div class="main__item"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle">
+            <title id="arrowRightIconTitle">Arrow Right</title>
+            <path d="M15 18l6-6-6-6"></path>
+            <path d="M3 12h17"></path>
+            <path stroke-linecap="round" d="M21 12h-1"></path>
+          </svg></div>
+          <div class="text_team_anchor">Dynamics & Controls Team</div>
+        </a>
+        <a href="#driverless" class="team_anchor_requirements w-inline-block">
+          <div class="main__item"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle">
+            <title id="arrowRightIconTitle">Arrow Right</title>
+            <path d="M15 18l6-6-6-6"></path>
+            <path d="M3 12h17"></path>
+            <path stroke-linecap="round" d="M21 12h-1"></path>
+          </svg></div>
+          <div class="text_team_anchor">Driverless Team</div>
+        </a>
+        <a href="#management" class="team_anchor_requirements w-inline-block">
+          <div class="main__item"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle">
+            <title id="arrowRightIconTitle">Arrow Right</title>
+            <path d="M15 18l6-6-6-6"></path>
+            <path d="M3 12h17"></path>
+            <path stroke-linecap="round" d="M21 12h-1"></path>
+          </svg></div>
+          <div class="text_team_anchor">Management Team</div>
+        </a>
+        <a href="#communications" class="team_anchor_requirements w-inline-block">
+          <div class="main__item"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle">
+            <title id="arrowRightIconTitle">Arrow Right</title>
+            <path d="M15 18l6-6-6-6"></path>
+            <path d="M3 12h17"></path>
+            <path stroke-linecap="round" d="M21 12h-1"></path>
+          </svg></div>
+          <div class="text_team_anchor">Communications Team</div>
+        </a>
+      </div>
+    </div>
+    <div class="template_section competition_structure" id="mechanics">
+        <h2 class="heading_template" >Mechanics Team</h2>
         <div class="text-block_template">
             The mechanics team is responsible for the design, simulation, manufacturing and assembly of all the car&#x27;s mechanical components such as the chassis, transmission, braking and steering system, suspensions and aerodynamics.
             <br/>
@@ -235,25 +388,25 @@
             <strong>Skills and areas of knowledge required to be able to join this team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Personal initiative to work, even independently, combined with sufficient self- critique to prevent mistakes.</li>
-            <li class="requirement_list_item">Practical knowledge in the design and manufacturing of mechanical components.</li>
-            <li class="requirement_list_item">Particular attention will be given to the following aspects of components: weight and type of stress to which they are subjected, dimensions, ease of assembly, machining tolerances and defects or natural discrepancies between the CAD project and the final model of the car or its subassemblies.</li>
-            <li class="requirement_list_item">Assembly design, synergistically integrating the various parts.</li>
-            <li class="requirement_list_item">Knowledge of software for 3D CAD such as Autodesk Inventor, Solidworks or Siemens NX.</li>
+           <li class="requirement_list_item">Personal initiative to work, even independently, combined with sufficient self- critique to prevent mistakes.</li>
+           <li class="requirement_list_item">Practical knowledge in the design and manufacturing of mechanical components.</li>
+           <li class="requirement_list_item">Particular attention will be given to the following aspects of components: weight and type of stress to which they are subjected, dimensions, ease of assembly, machining tolerances and defects or natural discrepancies between the CAD project and the final model of the car or its subassemblies.</li>
+           <li class="requirement_list_item">Assembly design, synergistically integrating the various parts.</li>
+           <li class="requirement_list_item">Knowledge of software for 3D CAD such as Autodesk Inventor, Solidworks or Siemens NX.</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>The following areas of expertise will be required depending on the specific role within the mechanics team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Practical skills such as painting, mould preparation, carbon fibre lamination and use of power tools</li>
-            <li class="requirement_list_item">FEM and CFD analysis with software such as Ansys or starccm+</li>
-            <li class="requirement_list_item">Topological optimisation</li>
-            <li class="requirement_list_item">Usage of software such as Mathematica or similar for kinematic analysis oncomponents’ stresses</li>
+           <li class="requirement_list_item">Practical skills such as painting, mould preparation, carbon fibre lamination and use of power tools</li>
+           <li class="requirement_list_item">FEM and CFD analysis with software such as Ansys or starccm+</li>
+           <li class="requirement_list_item">Topological optimisation</li>
+           <li class="requirement_list_item">Usage of software such as Mathematica or similar for kinematic analysis oncomponents’ stresses</li>
         </ul>
         <img src="/assets/bg_img/chi_siamo_bg_img_left.svg" loading="lazy" alt="" class="bg_img up_left"/>
         <img src="/assets/bg_img/chi_siamo_bg_img_right.svg" loading="lazy" alt="" class="bg_img center_right"/>
     </div>
-    <div class="template_section competition_structure">
+    <div class="template_section competition_structure" id="electronics">
         <h2 class="heading_template">Electronics Team</h2>
         <div class="text-block_template">
           The electronics team is responsible for designing and testing the low and high- voltage systems of the car as well as the battery management system, wireless telemetry, inverters and data acquisition.
@@ -263,33 +416,33 @@
             <strong>Skills and areas of knowledge required to be able to join this team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Basic electronics knowledge: it is essential to know very well the operation of both semiconductor and electromechanical basic components (R, C, L, Diodes, Mosfet, Transistor, Relay, OpAmp, Filters, etc.)</li>
-            <li class="requirement_list_item">Ability to consider one’s work in the broader context of the entire project. Members will be asked not only to develop their own design but also to consider how to integrate it mechanically, how its software will have to be written and how it will integrate with the rest of the systems.</li>
+           <li class="requirement_list_item">Basic electronics knowledge: it is essential to know very well the operation of both semiconductor and electromechanical basic components (R, C, L, Diodes, Mosfet, Transistor, Relay, OpAmp, Filters, etc.)</li>
+           <li class="requirement_list_item">Ability to consider one’s work in the broader context of the entire project. Members will be asked not only to develop their own design but also to consider how to integrate it mechanically, how its software will have to be written and how it will integrate with the rest of the systems.</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>The following key areas of knowledge should preferably be already established but will be developed during the first week after joining anyway:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Knowledge of Git, Github and version control</li>
-            <li class="requirement_list_item">Familiarity with ECAD KiCad software or similar</li>
-            <li class="requirement_list_item">Knowledge of the Formula Student Germany regulation</li>
-            <li class="requirement_list_item">Ability to develop schematics and layouts for 2-layer PCBs with microcontrollers and mixed-signal (analogue + digital) sections</li>
-            <li class="requirement_list_item">SPICE simulations</li>
+           <li class="requirement_list_item">Knowledge of Git, Github and version control</li>
+           <li class="requirement_list_item">Familiarity with ECAD KiCad software or similar</li>
+           <li class="requirement_list_item">Knowledge of the Formula Student Germany regulation</li>
+           <li class="requirement_list_item">Ability to develop schematics and layouts for 2-layer PCBs with microcontrollers and mixed-signal (analogue + digital) sections</li>
+           <li class="requirement_list_item">SPICE simulations</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>The following areas of expertise will be required depending on the specific role within the electronics team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Design of complex schematics (Microcontrollers, ADCs, logic circuits, HV, Fail safe circuits, etc.)</li>
-            <li class="requirement_list_item">PCB 2/4 layer board layout, mixed-signal, high voltage, high current, differential lines, EMC, EMI</li>
-            <li class="requirement_list_item">Knowledge of power electronics and powertrain</li>
-            <li class="requirement_list_item">Experience in embedded C programming</li>
-            <li class="requirement_list_item">Advanced SPICE and/or Ansys simulations</li>
-            <li class="requirement_list_item">Knowledge of electric motors and their control (inverters)</li>
+           <li class="requirement_list_item">Design of complex schematics (Microcontrollers, ADCs, logic circuits, HV, Fail safe circuits, etc.)</li>
+           <li class="requirement_list_item">PCB 2/4 layer board layout, mixed-signal, high voltage, high current, differential lines, EMC, EMI</li>
+           <li class="requirement_list_item">Knowledge of power electronics and powertrain</li>
+           <li class="requirement_list_item">Experience in embedded C programming</li>
+           <li class="requirement_list_item">Advanced SPICE and/or Ansys simulations</li>
+           <li class="requirement_list_item">Knowledge of electric motors and their control (inverters)</li>
         </ul>
         <img src="/assets/bg_img/chi_siamo_bg_img_left.svg" loading="lazy" alt="" class="bg_img up_left"/>
     </div>
-    <div class="template_section competition_structure">
+    <div class="template_section competition_structure" id="software">
         <h2 class="heading_template">Software Team</h2>
         <div class="text-block_template">
           The software team is responsible for the development of the firmware for the car’s electronics, the cloud-based telemetry system and the steering wheel’s interface.
@@ -301,33 +454,33 @@
             <strong>Skills and areas of knowledge required to be able to join this team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">A solid foundation of C/C++ programming to handle medium-sized codebases</li>
-            <li class="requirement_list_item">Basic knowledge of Linux: familiar with basic terminal commands</li>
-            <li class="requirement_list_item">Proficiency with Git and GitHub</li>
+           <li class="requirement_list_item">A solid foundation of C/C++ programming to handle medium-sized codebases</li>
+           <li class="requirement_list_item">Basic knowledge of Linux: familiar with basic terminal commands</li>
+           <li class="requirement_list_item">Proficiency with Git and GitHub</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>The following key areas of knowledge should preferably be already established but will be developed during the first week after joining anyway:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Knowledge of the Formula Student Germany regulation</li>
-            <li class="requirement_list_item">Programming on microcontrollers (Arduino, STM32): familiarity with the main peripherals (ADC, CAN, GPIO, I2C, etc.)</li>
-            <li class="requirement_list_item">Intermediate knowledge of Linux: network configuration (DHCP, DNS, SSH), systems, users and permissions</li>
+           <li class="requirement_list_item">Knowledge of the Formula Student Germany regulation</li>
+           <li class="requirement_list_item">Programming on microcontrollers (Arduino, STM32): familiarity with the main peripherals (ADC, CAN, GPIO, I2C, etc.)</li>
+           <li class="requirement_list_item">Intermediate knowledge of Linux: network configuration (DHCP, DNS, SSH), systems, users and permissions</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>The following areas of expertise will be required depending on the specific role within the software team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">MQTT networking</li>
-            <li class="requirement_list_item">Advanced knowledge of Linux: kernel customisation and compilation, etc.</li>
-            <li class="requirement_list_item">Low-level graphics: LVGL, display controller software configurations</li>
-            <li class="requirement_list_item">ImGui framework: development of medium/high complexity applications</li>
-            <li class="requirement_list_item">Cross-compiling: developing cross-platform (Windows, Mac and Linux) desktop applications</li>
-            <li class="requirement_list_item">Electronics for battery pack control systems (the more experience, the better)</li>
+           <li class="requirement_list_item">MQTT networking</li>
+           <li class="requirement_list_item">Advanced knowledge of Linux: kernel customisation and compilation, etc.</li>
+           <li class="requirement_list_item">Low-level graphics: LVGL, display controller software configurations</li>
+           <li class="requirement_list_item">ImGui framework: development of medium/high complexity applications</li>
+           <li class="requirement_list_item">Cross-compiling: developing cross-platform (Windows, Mac and Linux) desktop applications</li>
+           <li class="requirement_list_item">Electronics for battery pack control systems (the more experience, the better)</li>
         </ul>
         <img src="/assets/bg_img/chi_siamo_bg_img_left.svg" loading="lazy" alt="" class="bg_img up_left"/>
         <img src="/assets/bg_img/chi_siamo_bg_img_right.svg" loading="lazy" alt="" class="bg_img center_right"/>
       </div>
-    <div class="template_section competition_structure">
+    <div class="template_section competition_structure" id="dynamics">
         <h2 class="heading_template">Dynamics & Controls Team</h2>
         <div class="text-block_template">
           The dynamics and control team is responsible for designing and analysing the kinematics of the vehicle. The team works on developing controls such as slip control and torque vectoring to achieve better performance. Furthermore, it is also tasked with the development of the car’s aero kit by optimising the vehicle's interaction with airflow, reducing drag and improving overall efficiency.
@@ -339,12 +492,12 @@
             <strong>Skills and areas of knowledge required to be able to join this team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Proficiency with tools such as Maple/Wolfram Mathematica, MatLab and Simulink</li>
-            <li class="requirement_list_item">Any experience with STAR CCM+, Ansys Mechanical and Fluent is considered a valuable asset</li>
+           <li class="requirement_list_item">Proficiency with tools such as Maple/Wolfram Mathematica, MatLab and Simulink</li>
+           <li class="requirement_list_item">Any experience with STAR CCM+, Ansys Mechanical and Fluent is considered a valuable asset</li>
         </ul>
         <img src="/assets/bg_img/chi_siamo_bg_img_left.svg" loading="lazy" alt="" class="bg_img up_left"/>
     </div>
-    <div class="template_section competition_structure">
+    <div class="template_section competition_structure" id="driverless">
         <h2 class="heading_template">Driverless Team</h2>
         <div class="text-block_template">
           The driverless project is a joint effort by members of different areas who work together to turn our car into a driverless vehicle. The car has to be able to recognise a standard track delimited by a series of cones and to complete it as fast as possible. Achieving this macro-objective is possible thanks to the collaboration of the following departments: Software, Electronics, Mechanics, Dynamics and Control.
@@ -358,28 +511,28 @@
               Skills and areas of knowledge required to be able to join this team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Proficiency in C++ and Python programming</li>
-            <li class="requirement_list_item">Experience with image/video processing, computer vision, stereo and/or lidar cameras and machine learning (preferable, but not necessary)</li>
+           <li class="requirement_list_item">Proficiency in C++ and Python programming</li>
+           <li class="requirement_list_item">Experience with image/video processing, computer vision, stereo and/or lidar cameras and machine learning (preferable, but not necessary)</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>Driverless Actuation<br />
               Skills and areas of knowledge required to be able to join this team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Knowledge of Matlab, Simulink and Simscape</li>
+           <li class="requirement_list_item">Knowledge of Matlab, Simulink and Simscape</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>Preferred (but not required):</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Knowledge of software for 3D CAD such as Autodesk Inventor, Solidworks or Siemens NX</li>
-            <li class="requirement_list_item">Basic notions of electronics and fluidics</li>
-            <li class="requirement_list_item">Familiarity with the concept of the control loop</li>
+           <li class="requirement_list_item">Knowledge of software for 3D CAD such as Autodesk Inventor, Solidworks or Siemens NX</li>
+           <li class="requirement_list_item">Basic notions of electronics and fluidics</li>
+           <li class="requirement_list_item">Familiarity with the concept of the control loop</li>
         </ul>
         <img src="/assets/bg_img/chi_siamo_bg_img_left.svg" loading="lazy" alt="" class="bg_img up_left"/>
         <img src="/assets/bg_img/chi_siamo_bg_img_right.svg" loading="lazy" alt="" class="bg_img center_right"/>
     </div>
-    <div class="template_section competition_structure">
+    <div class="template_section competition_structure" id="management">
         <h2 class="heading_template">Management Team</h2>
         <div class="text-block_template">
           The management team is responsible for the organisation’s finances and is tasked with handling purchases and managing relations with the team’s partner companies.
@@ -394,16 +547,16 @@
             <strong>The following areas of expertise will be required depending on the specific role within the management team:</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Excellent knowledge of general budgeting and cost analysis and accounting</li>
-            <li class="requirement_list_item">Good knowledge of Excel and basic knowledge of industrial productivity and logistics (e.g. Drafting a budget)</li>
-            <li class="requirement_list_item">Excellent writing skills, both in English and Italian</li>
-            <li class="requirement_list_item">Good public speaking skills in order to pitch our project to potential sponsors</li>
-            <li class="requirement_list_item">Ability to spot potential sponsorship opportunities</li>
+           <li class="requirement_list_item">Excellent knowledge of general budgeting and cost analysis and accounting</li>
+           <li class="requirement_list_item">Good knowledge of Excel and basic knowledge of industrial productivity and logistics (e.g. Drafting a budget)</li>
+           <li class="requirement_list_item">Excellent writing skills, both in English and Italian</li>
+           <li class="requirement_list_item">Good public speaking skills in order to pitch our project to potential sponsors</li>
+           <li class="requirement_list_item">Ability to spot potential sponsorship opportunities</li>
         </ul>
         <img src="/assets/bg_img/chi_siamo_bg_img_left.svg" loading="lazy" alt="" class="bg_img up_left"/>
         <img src="/assets/bg_img/chi_siamo_bg_img_right.svg" loading="lazy" alt="" class="bg_img center_right"/>
     </div>
-    <div class="template_section competition_structure">
+    <div class="template_section competition_structure" id="communications">
         <h2 class="heading_template">Communications Team</h2>
         <div class="text-block_template">
           The communications team takes care of everything regarding the public image of the team. This involves the production of content for both digital (photos, videos, graphic design works) and physical media (posters, flyers, brochures, business cards, team wear, car livery). Furthermore, the communications team is responsible for managing the team’s social media accounts and for organising public events.
@@ -423,17 +576,17 @@
             </strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Ability to produce (i.e. shoot and edit) pictures of consistent quality in line with the editorial line of the team. A portfolio will be asked for in the application form</li>
-            <li class="requirement_list_item">Knowledge of Lightroom/Capture One or similar</li>
-            <li class="requirement_list_item">Knowledge of Photoshop/Affinity Photo or similar</li>
+           <li class="requirement_list_item">Ability to produce (i.e. shoot and edit) pictures of consistent quality in line with the editorial line of the team. A portfolio will be asked for in the application form</li>
+           <li class="requirement_list_item">Knowledge of Lightroom/Capture One or similar</li>
+           <li class="requirement_list_item">Knowledge of Photoshop/Affinity Photo or similar</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>Preferable (but not necessary):</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Experience with the following types of photography: events, motorsport, portrait, group photos and product photography.</li>
-            <li class="requirement_list_item">Ability to work with speed lights and/or strobes and light modifiers</li>
-            <li class="requirement_list_item">Ability to do digital photo compositing</li>
+           <li class="requirement_list_item">Experience with the following types of photography: events, motorsport, portrait, group photos and product photography.</li>
+           <li class="requirement_list_item">Ability to work with speed lights and/or strobes and light modifiers</li>
+           <li class="requirement_list_item">Ability to do digital photo compositing</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>  FILMMAKER
@@ -444,18 +597,18 @@
             </strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Ability to shoot and edit quality videos for a variety of formats (Instagram stories and reels, YouTube, etc.). A portfolio will be asked for in the application form</li>
-            <li class="requirement_list_item">Knowledge of Davinci Resolve/Final Cut Pro/Adobe Premiere Pro</li>
-            <li class="requirement_list_item">Intermediate knowledge of audio recording (e.g. knowing how to record clean dialogue)</li>
-            <li class="requirement_list_item">Basic knowledge of colour grading and audio editing (equaliser, high-pass, low-pass, etc.)</li>
+           <li class="requirement_list_item">Ability to shoot and edit quality videos for a variety of formats (Instagram stories and reels, YouTube, etc.). A portfolio will be asked for in the application form</li>
+           <li class="requirement_list_item">Knowledge of Davinci Resolve/Final Cut Pro/Adobe Premiere Pro</li>
+           <li class="requirement_list_item">Intermediate knowledge of audio recording (e.g. knowing how to record clean dialogue)</li>
+           <li class="requirement_list_item">Basic knowledge of colour grading and audio editing (equaliser, high-pass, low-pass, etc.)</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>Preferable (but not necessary):</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Experience with the following types of videography: events, motorsport, product showcasing</li>
-            <li class="requirement_list_item">Ability to work with continuous light and light modifiers</li>
-            <li class="requirement_list_item">Knowledge of 3D compositing software such as Blender/Cinema 4D or similar</li>
+           <li class="requirement_list_item">Experience with the following types of videography: events, motorsport, product showcasing</li>
+           <li class="requirement_list_item">Ability to work with continuous light and light modifiers</li>
+           <li class="requirement_list_item">Knowledge of 3D compositing software such as Blender/Cinema 4D or similar</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>  GRAPHIC DESIGNER
@@ -466,17 +619,17 @@
             </strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Ability to produce graphic design work of consistent quality, both for digital (Instagram, Facebook, Linkedin, web) and physical media (posters, leaflets, business cards, brochures, stickers etc.)</li>
-            <li class="requirement_list_item">Knowledge of Adobe Illustrator/Affinity Designer or similar</li>
-            <li class="requirement_list_item">Basic knowledge of Adobe Indesign/Affinity Publisher or similar</li>
-            <li class="requirement_list_item">Basic knowledge in the area of printing: colour spaces, types of paper (e.g. opaque vs lucid, different g/m2) and printing formats</li>
+           <li class="requirement_list_item">Ability to produce graphic design work of consistent quality, both for digital (Instagram, Facebook, Linkedin, web) and physical media (posters, leaflets, business cards, brochures, stickers etc.)</li>
+           <li class="requirement_list_item">Knowledge of Adobe Illustrator/Affinity Designer or similar</li>
+           <li class="requirement_list_item">Basic knowledge of Adobe Indesign/Affinity Publisher or similar</li>
+           <li class="requirement_list_item">Basic knowledge in the area of printing: colour spaces, types of paper (e.g. opaque vs lucid, different g/m2) and printing formats</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>Preferable (but not necessary):</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Experience with the design of car liveries</li>
-            <li class="requirement_list_item">Experience with clothing design</li>
+           <li class="requirement_list_item">Experience with the design of car liveries</li>
+           <li class="requirement_list_item">Experience with clothing design</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>  SOCIAL MEDIA MANAGER
@@ -487,18 +640,18 @@
             </strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Advanced knowledge of Instagram, Facebook, LinkedIn and Youtube</li>
-            <li class="requirement_list_item">Familiarity with the Meta Business Suite</li>
-            <li class="requirement_list_item">Good writing skills in both English and Italian</li>
-            <li class="requirement_list_item">Ability to come up with ideas for new content and to execute the editorial line of the team via social media accounts</li>
-            <li class="requirement_list_item">Ability to plan social media content in advance</li>
+           <li class="requirement_list_item">Advanced knowledge of Instagram, Facebook, LinkedIn and Youtube</li>
+           <li class="requirement_list_item">Familiarity with the Meta Business Suite</li>
+           <li class="requirement_list_item">Good writing skills in both English and Italian</li>
+           <li class="requirement_list_item">Ability to come up with ideas for new content and to execute the editorial line of the team via social media accounts</li>
+           <li class="requirement_list_item">Ability to plan social media content in advance</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>Preferable (but not necessary):</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Experience with paid advertising on Meta</li>
-            <li class="requirement_list_item">Experience with social media management platforms such as Hootsuite or similar</li>
+           <li class="requirement_list_item">Experience with paid advertising on Meta</li>
+           <li class="requirement_list_item">Experience with social media management platforms such as Hootsuite or similar</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>  EVENT MANAGER
@@ -509,26 +662,30 @@
             </strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Ability to organise small to medium-scale events: taking care of the logistics, public relations and required authorisations</li>
-            <li class="requirement_list_item">Ability to work and communicate with companies, associations and institutions (e.g. the university or the municipality)</li>
+           <li class="requirement_list_item">Ability to organise small to medium-scale events: taking care of the logistics, public relations and required authorisations</li>
+           <li class="requirement_list_item">Ability to work and communicate with companies, associations and institutions (e.g. the university or the municipality)</li>
         </ul>
         <h4 class="title_skills_req">
             <strong>Preferable (but not necessary):</strong>
         </h4>
         <ul role="list">
-            <li class="requirement_list_item">Familiarity with Figma</li>
-            <li class="requirement_list_item">Familiarity with Airtable</li>
+           <li class="requirement_list_item">Familiarity with Figma</li>
+           <li class="requirement_list_item">Familiarity with Airtable</li>
         </ul>
         <img src="/assets/bg_img/chi_siamo_bg_img_left.svg" loading="lazy" alt="" class="bg_img up_left"/>
         <img src="/assets/bg_img/chi_siamo_bg_img_right.svg" loading="lazy" alt="" class="bg_img center_right"/>
     </div>
     <div class="template_section competition_structure call_action">
       <h2 class="heading_template">Got what it takes?</h2>
-      <a data-w-id="58756b9e-1588-7427-ba11-4ea63345eaa1" href="https://airtable.com/shrorVpRaW3HqUUfT" class="secondary_btn apply_btn call_action w-inline-block">
+      <a data-w-id="58756b9e-1588-7427-ba11-4ea63345eaa1" href="https://airtable.com/shrorVpRaW3HqUUfT" class="secondary_btn apply_btn call_action w-inline-block" style=":hover{text-decoration: underline;}">
         <div class="text-block_btn call_action">
           Apply
         </div>
-        <img src="/assets/icons/list_bullet.png" loading="lazy" width="20" height="20" alt="" class="share_icon">
+        <div class="main__item call_action"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="circleOkIconTitle">
+          <title id="circleOkIconTitle">OK</title>
+          <polyline points="7 13 10 16 17 9"></polyline>
+          <circle cx="12" cy="12" r="10"></circle>
+        </svg></div>
       </a>
     </div>
     <!-- FOOTER BEGINS -->

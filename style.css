@@ -198,27 +198,27 @@ td, th {
 }
 
 .w-icon-slider-right:before {
-  content: "î˜€";
+  content: "";
 }
 
 .w-icon-slider-left:before {
-  content: "î˜";
+  content: "";
 }
 
 .w-icon-nav-menu:before {
-  content: "î˜‚";
+  content: "";
 }
 
 .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-  content: "î˜ƒ";
+  content: "";
 }
 
 .w-icon-file-upload-remove:before {
-  content: "î¤€";
+  content: "";
 }
 
 .w-icon-file-upload-icon:before {
-  content: "î¤ƒ";
+  content: "";
 }
 
 * {
@@ -2217,6 +2217,7 @@ body {
   color: #fff;
   letter-spacing: .15px;
   line-height: 25px;
+  text-decoration: none;
 }
 
 .text-block_footer:hover {
@@ -2275,9 +2276,26 @@ body {
   font-size: 2rem;
 }
 
+.secondary_btn.apply_btn.call_action:hover {
+  color: #141414;
+  background-color: #fff;
+}
+
 .secondary_btn.share_btn {
   background-color: rgba(0, 0, 0, 0);
   border-color: #fff;
+}
+
+.secondary_btn.apply_action {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.secondary_btn.apply_action:hover {
+  color: #141414;
 }
 
 .image {
@@ -2308,11 +2326,11 @@ body {
 
 .inline_icon_text-footer {
   justify-content: center;
+  text-decoration: none;
   display: flex;
 }
 
 .text-block_btn {
-  color: #181818;
   letter-spacing: .5px;
   font-weight: 700;
 }
@@ -2322,7 +2340,6 @@ body {
 }
 
 .text-block_btn.call_action {
-  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -3952,6 +3969,44 @@ body {
   line-height: 40px;
 }
 
+.team_info_wrapper_recruitment {
+  min-width: 100%;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-top: 10px;
+  display: grid;
+}
+
+.team_anchor_requirements {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  align-items: center;
+  padding: 16px 31px;
+  text-decoration: none;
+  display: flex;
+}
+
+.team_anchor_requirements:hover {
+  color: #141414;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.text_team_anchor {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.image-28 {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
 @media screen and (min-width: 1440px) {
   .background-video {
     align-items: center;
@@ -4589,6 +4644,10 @@ body {
   .candidati_btn {
     margin-top: 15px;
     margin-left: 0;
+  }
+
+  .team_info_wrapper_recruitment {
+    grid-template-columns: 1fr;
   }
 }
 
