@@ -1,7 +1,3 @@
-.secondary-button {
-  color: black;
-}
-
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -2257,6 +2253,7 @@ body {
 
 .secondary_btn {
   grid-column-gap: 10px;
+  color: #141414;
   background-color: #f3ff14;
   border: 2px solid #f3ff14;
   border-radius: 90px;
@@ -4229,7 +4226,7 @@ body {
   .grid_footer {
     grid-template-columns: 1fr;
     align-items: stretch;
-    justify-items: start;
+    justify-items: center;
   }
 
   .logo_footer {
