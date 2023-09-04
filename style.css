@@ -1,3 +1,7 @@
+.secondary-button {
+  color: black;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -4044,6 +4048,10 @@ body {
     grid-auto-rows: 1fr;
   }
 
+  .text-block_btn {
+    color: #141414;
+  }
+
   .numbers_showcase-div {
     padding-left: 80px;
     padding-right: 80px;
@@ -4524,6 +4532,10 @@ body {
 
   .banner_text-block, .candidati_btn {
     font-size: 1rem;
+  }
+
+  .team_info_wrapper_recruitment {
+    grid-template-columns: 1fr;
   }
 }
 
