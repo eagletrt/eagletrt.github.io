@@ -4539,7 +4539,7 @@ body {
 @media screen and (max-width: 479px) {
   .grid_footer {
     grid-template-columns: 1fr;
-    padding-left: 15%;
+    /* padding-left: 15%; */
   }
 
   .buttons_wrapper {
