@@ -2518,6 +2518,16 @@ body {
   display: grid;
 }
 
+.team_members_container_ {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto;
+  grid-template-columns: .5fr .5fr .5fr;
+  grid-auto-columns: 1fr;
+  margin-top: 45px;
+  display: grid;
+}
+
 .names_wrapper {
   flex-wrap: wrap;
   justify-content: center;
@@ -4257,6 +4267,11 @@ body {
   }
 
   .team_members_container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .team_members_container_ {
     grid-template-columns: 1fr;
     justify-items: center;
   }
