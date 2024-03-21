@@ -2478,7 +2478,7 @@ body {
 
 .sponsors_container {
   width: 100%;
-  max-width: 1150px;
+  max-width: 1920px;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 50px;
@@ -2492,9 +2492,17 @@ body {
   font-size: 1.33rem;
 }
 
+.sub-sponsor_wrapper{
+  width: 100%;
+
+}
+
 .brands_container {
   flex-wrap: wrap;
-  align-content: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
 }
 
 .team_container {
@@ -2590,6 +2598,39 @@ body {
   margin-bottom: 0;
   padding-left: 0;
   display: flex;
+}
+
+.sponsors_list_gold {
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  width: 62%;
+  max-width: 1195px;
+}
+
+.sponsors_list_silver {
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  height: 7%;
+  max-height: 74px;
+  width: 90%;
+  max-width: 1733px;
+}
+.sponsors_list_bronze {
+  
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  width: 76%;
+  max-width: 1460px;
 }
 
 .nav-link {
@@ -2931,6 +2972,17 @@ body {
 
 .brand_image {
   width: 100%;
+  height: 100%;
+  padding-bottom: 25px;
+}
+.brand_image_silver {
+  width: 75%;
+  height: 75%;
+  padding-bottom: 25px;
+}
+.brand_image_bronze {
+  width: 70%;
+  height: 70%;
   padding-bottom: 25px;
 }
 
@@ -3008,9 +3060,16 @@ body {
   line-height: 20px;
 }
 
-.heading_team, .heading_sponsor, .heading_template {
+.heading_team,.heading_template {
   color: #f3ff14;
   font-size: 2rem;
+}
+
+.heading_sponsor {
+  width: 100%;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
 }
 
 .teams_wrapper {
