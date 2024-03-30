@@ -2601,13 +2601,23 @@ body {
 }
 
 .sponsors_list_gold {
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: stretch;
   align-items: center;
   margin-bottom: 0;
   padding-left: 0;
   display: flex;
   width: 62%;
+  max-width: 1195px;
+}
+.sponsors{
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  width: 25%;
   max-width: 1195px;
 }
 
