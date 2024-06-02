@@ -3006,7 +3006,7 @@ body {
 .brand_image_silver {
   width: 95%;
   height: 95%;
-  max-width: 100px;
+  max-width: 2000px;
   padding-left: 3px;
   padding-right: 3px;
   padding-bottom: 25px;
@@ -3015,7 +3015,7 @@ body {
 
   width: 80%;
   height: 80%;
-  max-width: 50px;
+  max-width: 120px;
   padding-left: 3px;
   padding-right: 3px; 
   padding-bottom: 25px;
