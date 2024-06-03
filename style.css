@@ -2481,8 +2481,7 @@ body {
   max-width: 1920px;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 25px;
-  padding-right: 25px;
+  
   display: flex;
   position: relative;
 }
@@ -2610,15 +2609,11 @@ body {
   width: 50%;
   max-width: 1195px;
 }
-.sponsors{
-  justify-content: space-around;
-  align-content: stretch;
-  align-items: center;
-  margin-bottom: 0;
-  padding-left: 0;
-  display: flex;
-  width: 25%;
-  max-width: 1195px;
+.sponsor{
+  
+  
+  width: 100%;
+  
 }
 
 .sponsors_list_silver {
@@ -2634,7 +2629,7 @@ body {
 }
 .sponsors_list_bronze {
   
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
   padding-left: 0;
@@ -3001,23 +2996,33 @@ body {
   height: 100%;
   padding-bottom: 25px;
   padding-left: 2px;
-  padding-right: 2px;
+  
 }
 .brand_image_silver {
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 90%;
   max-width: 2000px;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-left: 4%;
+  
   padding-bottom: 25px;
 }
 .brand_image_bronze {
 
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
+  
+  padding-left: 2%;
+   
+  padding-bottom: 25px;
+  
+}
+.brand_image_support {
+
+  width: 70%;
+  height: 70%;
   max-width: 120px;
-  padding-left: 3px;
-  padding-right: 3px; 
+  padding-left: 2%;
+  
   padding-bottom: 25px;
   
 }
