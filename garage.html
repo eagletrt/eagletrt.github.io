@@ -7,7 +7,7 @@
   data-wf-site="6401ed150a210b785600a87b"
 >
   <head>
-    
+    <script src="navbar.js"></script> 
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -57,7 +57,7 @@
       class="navbar-logo-left wf-section"
     >
 <!-- APPLICATION BANNER BEGINS -->
-      <div class="candidati_banner">
+      <!-- <div class="candidati_banner">
         <div class="banner_text-block">
           Applications are open!
           <br />
@@ -65,7 +65,7 @@
         <a href="https://jobs.eagletrt.it/" class="candidati_btn w-button"
           >Apply now</a
         >
-      </div>
+      </div>-->
       <!-- APPLICATION BANNER ENDS -->
       <div
         data-animation="default"
@@ -78,51 +78,63 @@
       >
         <div class="container">
           <div class="navbar-wrapper">
-            <a href="/" class="navbar-brand w-nav-brand"
-              ><img
+            <div class="navbar-logo">
+              <a href="/" class="navbar-brand w-nav-brand">
+                <img
                 src="./assets/logo/white_brand.svg"
                 loading="lazy"
                 height="75"
                 width="75"
-                alt="eagle white brand logo"
-            /></a>
+                alt="eagle white brand logo"/>
+              </a>
+            </div>
             <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
               <ul role="list" class="nav-menu-two w-list-unstyled">
                 <li>
-                  <a href="/" class="navbar_link">Home</a>
+                  <a href="/" aria-current="page" class="navbar_link w-current"><h4>Home</h4></a>
                 </li>
                 <li>
-                  <a href="/chi_siamo" class="navbar_link">Chi siamo</a>
+                  <a href="chi_siamo.html" class="navbar_link"><h4>Chi Siamo</h4></a>
                 </li>
-                <li><a href="/team" class="navbar_link">Team</a></li>
-                <li><a href="https://jobs.eagletrt.it/" class="navbar_link">Positions</a></li>
+                <li><a href="team.html" class="navbar_link"><h4>Team</h4></a></li>
+                <li><a href="https://jobs.eagletrt.it/" class="navbar_link"><h4>Positions</h4></a></li>
+                <li><a href="garage.html" class="navbar_link"><h4>Garage</h4></a></li>
                 <li>
-                  <a
-                    href="/garage"
-                    aria-current="page"
-                    class="navbar_link w--current"
-                    >Garage</a
-                  >
+                  <a href="per_le_aziende.html" class="navbar_link"><h4>Sponsor</h4></a>
                 </li>
-                <li>
-                  <a href="/per_le_aziende" class="navbar_link"
-                    >Per le aziende</a
-                  >
-                </li>
-                <li><a href="/eventi" class="navbar_link">Eventi</a></li>
-                <li>
-                  <a href="/en/garage" class="w-inline-block"
-                    ><img
-                      src="./assets/icons/lang/en.png"
-                      loading="eager"
-                      width="25"
-                      height="25"
-                      alt="united kingdom flag"
-                      sizes="(max-width: 991px) 100vw, 25px"
-                  /></a>
+                <li><a href="eventi.html" class="navbar_link"><h4>Eventi</h4></a></li>
+                <li >
+                  <!-- Bandiera Mobile -->
+                  <div  >
+                    <a href="/en/index">
+                      <img
+                      class="flag-mobile"
+                        src="./assets/icons/lang/en.png"
+                        loading="eager"
+                        width="25"
+                        height="25"
+                        alt="United Kingdom flag"
+                      />
+                    </a>
+                  </div>
                 </li>
               </ul>
             </nav>
+            <!-- Bandiera Desktop -->
+            <div class="flag-desktop">
+              <a href="/en/index">
+                <img
+                  src="./assets/icons/lang/en.png"
+                  loading="eager"
+                  width="25"
+                  height="25"
+                  alt="United Kingdom flag"
+                />
+              </a>
+            </div>
+
+
+
             <div class="menu-button w-nav-button">
               <!-- <div class="w-icon-nav-menu"></div> -->
               <img
