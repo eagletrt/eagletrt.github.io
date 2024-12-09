@@ -1,0 +1,55 @@
+.body{
+    background-color: #181818;
+    font-size: 1rem;
+    line-height: 20px;
+}
+.sponsor_container{
+    flex-wrap: wrap;
+}
+.brands_container {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    max-width: 800px;  /* Limita la larghezza massima del contenitore */
+    width: 100%;      /* Fa sì che si adatti al 100% della larghezza della finestra, ma non superi max-width */
+    margin: 0 auto;   /* Centra il contenitore orizzontalmente */
+}
+.a_img {
+  border: none;         /* Rimuove il bordo intorno alle immagini */
+  outline: none;        /* Rimuove l'outline (che potrebbe essere blu) */
+  text-decoration: none; /* Rimuove eventuali stili di decorazione del testo */
+}
+  .Mainsponsor{
+    width:150px;
+    aspect-ratio: 1 / 1; /* Forza le immagini ad essere quadrate */
+    object-fit: contain; /* Mantiene il rapporto d'aspetto senza tagliare l'immagine */
+    background-color: transparent; /* Aggiunge uno sfondo trasparente per immagini non quadrate */
+}
+   .Goldsponsor {
+    width:95px;
+    aspect-ratio: 1 / 1; /* Forza le immagini ad essere quadrate */
+    object-fit: contain; /* Mantiene il rapporto d'aspetto senza tagliare l'immagine */
+    background-color: transparent; /* Aggiunge uno sfondo trasparente per immagini non quadrate */
+  }
+  .Silversponsor{
+    width: 75px;
+    aspect-ratio: 1 / 1; /* Forza le immagini ad essere quadrate */
+    object-fit: contain; /* Mantiene il rapporto d'aspetto senza tagliare l'immagine */
+    background-color: transparent; /* Aggiunge uno sfondo trasparente per immagini non quadrate */
+
+  }
+  .Bronzesponsor{
+    width:55px;
+    aspect-ratio: 1 / 1; /* Forza le immagini ad essere quadrate */
+    object-fit: contain; /* Mantiene il rapporto d'aspetto senza tagliare l'immagine */
+    background-color: transparent; /* Aggiunge uno sfondo trasparente per immagini non quadrate */
+  }
+  .Supporter{
+
+    width:45px;
+    aspect-ratio: 1 / 1; /* Forza le immagini ad essere quadrate */
+    object-fit: contain; /* Mantiene il rapporto d'aspetto senza tagliare l'immagine */
+    background-color: transparent; /* Aggiunge uno sfondo trasparente per immagini non quadrate */
+  }

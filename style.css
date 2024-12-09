@@ -2127,9 +2127,11 @@ body {
   text-decoration: underline;
 }
 .nav-menu-two h4{
-  font-size: 16px ;
-
+  font-size: 16px ; 
+  font-family: Arial;
 }
+
+
 
 .navbar_link.w-current {
   color: #f3ff14;
@@ -2574,8 +2576,8 @@ body {
   width: 100%;
   max-width: 1150px;
   margin-bottom: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
 }
 
@@ -2597,7 +2599,7 @@ body {
 }
 
 .nav-menu-wrapper {
-  width: 60%;
+  width: 70%;
 }
 
 
@@ -4710,7 +4712,7 @@ body {
   }
 
   .nav-menu-two {
-    grid-row-gap: 25px;
+    grid-row-gap: 30px;
     border-radius: 20px;
     flex-direction: column;
     align-items: center;
