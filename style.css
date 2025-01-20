@@ -173,10 +173,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+/*
 td, th {
   padding: 0;
-}
+}*/
 
 @font-face {
   font-family: webflow-icons;
@@ -234,7 +234,7 @@ body {
   color: #333;
   background-color: #fff;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1161,7 +1161,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-background-video {
-  height: 500px;
+  height: 650px;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -2099,14 +2099,14 @@ textarea.w-input, textarea.w-select {
 body {
   color: #fff;
   background-color: #181818;
-  font-family: Helveticaneue, sans-serif;
+  font-family: Arial;
   font-size: 1rem;
   line-height: 20px;
 }
 
 .body {
   background-color: #181818;
-  font-family: Helveticaneue, sans-serif;
+  font-family: Arial;
 }
 
 .links_wrapper {
@@ -2167,7 +2167,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 125px;
+  /*padding-top: 125px;*/
   transition: opacity .2s;
   display: flex;
   overflow: hidden;
@@ -2258,18 +2258,23 @@ body {
 }
 
 .secondary_btn {
-  grid-column-gap: 10px;
+  grid-column-gap: 5px;
   color: #141414;
   background-color: #f3ff14;
   border: 2px solid #f3ff14;
-  border-radius: 90px;
-  justify-content: space-between;
+  border-radius: 50px;
+  justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  padding: 5px 20px;
+  margin-top: 20px;
+  padding: 5px 10px;
   text-decoration: none;
   display: flex;
+  font-size: 14px;
+  line-height: 1.2;
+  max-width: 200px;
+  white-space: nowrap;
 }
+
 
 .secondary_btn.apply_btn {
   margin-right: 25px;
@@ -2415,11 +2420,13 @@ body {
 }
 
 .text-block_template {
-  line-height: 25px;
+  line-height: 30px;
+  font: Times !important;
 }
 
 .text-block_template.specs {
-  line-height: 30px;
+  line-height: 35px;
+  font: Times !important;
 }
 
 .clip_section {
@@ -3401,7 +3408,6 @@ body {
 
 .heading_team,.heading_template {
   color: #f3ff14;
-  font-size: 2rem;
 }
 
 .heading_sponsor {
