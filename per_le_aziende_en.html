@@ -6,8 +6,8 @@
   data-wf-page="6403513a27be9bdd11b58d4e"
   data-wf-site="6401ed150a210b785600a87b"
 >
-  <head>
-    
+  <head> 
+    <script src="navbar.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -18,7 +18,7 @@
       gtag("config", "G-W23X3MK46Y");
     </script>
     <meta charset="utf-8" />
-    <title>E-Agle - For companies</title>
+    <title>E-Agle - Partners</title>
     <meta
       name="description"
       content="Sponsors are the key partners who make our entire project possible.
@@ -32,9 +32,9 @@
     <meta content="Eventi" property="twitter:title" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-    <link href="../style.css" rel="stylesheet" type="text/css" />
-    <link href="../font.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./font.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9
       ]><script
         src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -63,7 +63,7 @@
       data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e"
       class="navbar-logo-left wf-section"
     >
-    <!-- APPLICATION BANNER BEGINS -->
+    <!-- APPLICATION BANNER BEGINS
     <div class="candidati_banner">
       <div class="banner_text-block">
         Applications are open!
@@ -73,7 +73,7 @@
         >Apply now</a
       >
     </div>
-    <!-- APPLICATION BANNER ENDS -->
+     APPLICATION BANNER ENDS -->
       <div
         data-animation="default"
         data-collapse="medium"
@@ -85,51 +85,64 @@
       >
         <div class="container">
           <div class="navbar-wrapper">
-            <a href="/en/" class="navbar-brand w-nav-brand"
-              ><img
-                src="../assets/logo/white_brand.svg"
-                loading="lazy"
-                height="75"
-                width="75"
-                alt="eagle white brand logo"
-            /></a>
+            <div class="navbar-logo">
+              <a href="index_en.html" class="navbar-brand w-nav-brand">
+                <img
+                src="white_brand.svg"
+                loading="lazy" 
+                height="80"
+                width="170"
+                alt="eagle white brand logo"/>
+              </a>
+            </div>
             <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
               <ul role="list" class="nav-menu-two w-list-unstyled">
                 <li>
-                  <a href="/en/" class="navbar_link">Home</a>
+                  <a href="chi_siamo_en.html" class="navbar_link"><h4>About Us</h4></a>
+                </li>
+                <li><a href="team_en.html" class="navbar_link"><h4>Team</h4></a></li>
+                <li><a href="https://jobs.eagletrt.it/" class="navbar_link"><h4>Jobs</h4></a></li>
+                <li><a href="garage_en.html" class="navbar_link"><h4>Garage</h4></a></li>
+                <li>
+                  <a href="Formula_Student_en.html" class="navbar_link"><h4>Formula Student</h4></a>
                 </li>
                 <li>
-                  <a href="/en/chi_siamo" class="navbar_link">About Us</a>
+                  <a href="per_le_aziende_en.html" class="navbar_link w-current"><h4>Partners</h4></a>
                 </li>
-                <li><a href="/en/team" class="navbar_link">Team</a></li>
-                <li><a href="https://jobs.eagletrt.it/" class="navbar_link">Positions</a></li>
-                <li><a href="/en/garage" class="navbar_link">Garage</a></li>
-                <li>
-                  <a
-                    href="/en/per_le_aziende"
-                    aria-current="page"
-                    class="navbar_link w--current"
-                    >For companies</a
-                  >
-                </li>
-                <li><a href="/en/eventi" class="navbar_link">Events</a></li>
-                <li>
-                  <a href="/per_le_aziende" class="w-inline-block"
-                    ><img
-                      src="../assets/icons/lang/it.png"
-                      loading="eager"
-                      width="25"
-                      height="25"
-                      alt="italy flag"
-                      sizes="(max-width: 991px) 100vw, 25px"
-                  /></a>
+                <li><a href="eventi_en.html" class="navbar_link"><h4>Events</h4></a></li>
+                <li >
+                  <!-- Bandiera Mobile -->
+                  <div  >
+                    <a href="per_le_aziende.html">
+                      <img
+                      class="flag-mobile"
+                        src="./assets/icons/lang/it.png"
+                        loading="eager"
+                        width="25"
+                        height="25"
+                        alt="United Kingdom flag"
+                      />
+                    </a>
+                  </div>
                 </li>
               </ul>
             </nav>
+            <!-- Bandiera Desktop -->
+            <div class="flag-desktop">
+              <a href="per_le_aziende.html">
+                <img
+                  src="./assets/icons/lang/it.png"
+                  loading="eager"
+                  width="25"
+                  height="25"
+                  alt="United Kingdom flag"
+                />
+              </a>
+            </div>
             <div class="menu-button w-nav-button">
               <!-- <div class="w-icon-nav-menu"></div> -->
               <img
-                src="../assets/icons/menu.png"
+                src="./assets/icons/menu.png"
                 loading="lazy"
                 alt="menu icon"
                 height="20"
@@ -143,6 +156,166 @@
     <br>
     <br>
     <div class="playground">
+            <div class="brands_containers">
+              <div class="sponsors_container">
+                <div class="sub-sponsor_wrapper">
+                  <div class="partner_title">
+                    <h1 class="heading_sponsor">I nostri partner</h1>
+                  </div>
+                
+                <!--main sponsor-->
+                <div class="sponsor_containers" bis_skin_checked="1">
+                    <a  class="a_img_main" href="https://www.trentinosviluppo.it" target="_blank">
+                        <img class="Mainsponsor" src="assets/sponsors/Main_sponsor/TS_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_main" href="https://www.dana.com/" target="_blank">
+                        <img class="Mainsponsor" src="assets/sponsors/Main_sponsor/Dana_logo_white_noBG 1.svg" loading="lazy" alt="">
+                    </a>
+                </div>
+                <!--gold sponsor-->
+                <div class="sponsor_containers" bis_skin_checked="1">
+                    <a class="a_img_gold" href="https://www.alpitronic.it" target="_blank">
+                        <img class="Goldsponsor" src="assets/sponsors/Gold_sponsor/alpitronic.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_gold" href="https://www.gokartverona.it/" target="_blank">
+                        <img class="Goldsponsor" src="assets/sponsors/Gold_sponsor/affi.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_gold" href="https://www.roechling.com" target="_blank">
+                        <img class="Goldsponsor" src="assets/sponsors/Gold_sponsor/rochling.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_gold" href="https://www.operauni.tn.it/" target="_blank">
+                        <img class="Goldsponsor" src="assets/sponsors/Gold_sponsor/Logo-Opera-Universitaria-versione-orizzontale-bianca 5.svg" loading="lazy" alt="">
+                    </a>
+                </div>
+                <!--Silver sponsor-->
+                <div class="sponsor_containers" bis_skin_checked="1">
+                  <a class="a_img_silver increse_height" href="https://www.aboutenergy.it" target="_blank">
+                      <img  class="Silversponsor increse_width" src="assets/sponsors/Silver_sponsor/about energy.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_silver" href="https://www.alpsalpine.com" target="_blank">
+                      <img class="Silversponsor" src="assets/sponsors/Bronze_sponsor/Logo Alps.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_silver" href="https://www.davcoil.com" target="_blank">
+                        <img class="Silversponsor" src="assets/sponsors/Silver_sponsor/Davcoil_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_silver" href="https://www.skf.com" target="_blank">
+                        <img class="Silversponsor" src="assets/sponsors/Silver_sponsor/SKF_w.svg" loading="lazy" alt="">
+                    </a>
+                </div>
+                <!--bronze sponsor-->
+                <div class="sponsor_containers" bis_skin_checked="1">
+                    <a class="a_img_bronze" href="https://www.technolasa.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/techno lasa.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.weller-tools.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/weller (technoLASA).svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.altair.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/altair.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://lappitalia.lappgroup.com/" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/Lapp_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.loctiteproducts.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/Loctite_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_margin a_img_bronze increse" href="https://www.3dconnexion.com" target="_blank">
+                      <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/3D connexion.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.sicurello.it" target="_blank">
+                      <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/sicurello 1.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze increse_width" href="https://lawtaxconsulting.it" target="_blank">
+                      <img  class="Bronzesponsor increse_width" src="assets/sponsors/Bronze_sponsor/Law-Tax_w.svg" loading="lazy" alt="">
+                    </a>
+                </div>
+                <div class="sponsor_containers" bis_skin_checked="1">
+                    <a class="a_img_bronze" href="https://www.ansys.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/Ansys_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.tecnoassistenzatrentina.it/" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/tecno assistenza trentina.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.altium.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/altium.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze increse_height" href="https://www.cerbahealthcare.it" target="_blank">
+                        <img  class="Bronzesponsor increse_height " src="assets/sponsors/Bronze_sponsor/Cerba HealthCare.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.wegher.it" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/wegher.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.norelem.it" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/Norelem_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.safety-park.com/it" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/SafetyPark_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.centrostudiathena.it" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/centro studi athena.svg" loading="lazy" alt="">
+                    </a>
+                </div>
+                <div class="sponsor_containers" bis_skin_checked="1">
+                  <a class="a_img_bronze increse" href="https://www.st.com" target="_blank">
+                      <img class="Bronzesponsor " src="assets/sponsors/Bronze_sponsor/ST.svg" loading="lazy" alt="">
+                  </a>
+                    <a class="a_img_bronze" href="https://www.g-angeloni.it/" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/angeloni.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.klueber.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/Klüber_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://new.siemens.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/Siemens_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.smartcae.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/SmartCAE_w.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.bender-it.com/" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/bender.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.fastenal.com" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/fastenal.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_bronze" href="https://www.alakarting.it/" target="_blank">
+                        <img class="Bronzesponsor" src="assets/sponsors/Bronze_sponsor/ala karting.svg" loading="lazy" alt="">
+                    </a>
+                  </div>
+                  <!--supporter-->
+                  <div class="sponsor_containers" bis_skin_checked="1">
+                    <a class="a_img_supporter increse" href="https://www.asinazionale.it/" target="_blank">
+                      <img class="supporters" src="assets/sponsors/Supporters/asi.svg" loading="lazy" alt="">
+                    </a>
+                    <a class="a_img_supporter" href="https://www.coni.it" target="_blank">
+                      <img class="supporters" src="assets/sponsors/Supporters/coni.svg" loading="lazy" alt="">
+                    </a> 
+                    <a class="a_img_supporter" href="https://www.calspan.com" target="_blank">
+                      <img class="supporters" src="assets/sponsors/Supporters/calspan.svg" loading="lazy" alt="">
+                    </a>
+                  <a class="a_img_supporter" href="https://www.molex.com" target="_blank">
+                      <img class="supporters" src="assets/sponsors/Supporters/molex.svg" loading="lazy" alt="">
+                  </a>
+                  <a class="a_img_supporter" href="https://fablab.unitn.it/" target="_blank">
+                    <img  class="supporters" src="assets/sponsors/Supporters/fablab.svg" loading="lazy" alt="">
+                  </a>
+                  <a class="a_img_supporter" href="https://www.win-source.net"target="_blank">
+                    <img class="supporters" src="assets/sponsors/Supporters/WinSource_Logo-white 1.svg" loading="lazy" alt="">
+                  </a>
+                  <a class="a_margin a_img_supporter increse" href="https://www.isabellenhuette.de/en/" target="_blank">
+                      <img class="supporters a_margin"  src="assets/sponsors/Supporters/isabellenhutte.svg" loading="lazy" alt="">
+                  </a>
+              </div>
+            </div>
+        
+          
+        </div>
+        <img
+          src="./assets/bg_img/home_page_bg_img_left.svg"
+          loading="lazy"
+          alt=""
+          class="bg_img bottom_left"
+        />
+      </div>   
       <div class="template_section">
         <h2 class="heading_template">Sponsor</h2>
         <div class="text-block_template">
@@ -162,14 +335,14 @@
           ><div class="text-block_btn">Work together</div>
           <div class="speedmeter_container">
             <img
-              src="../assets/icons/speedometer-0.png"
+              src="./assets/icons/speedometer-0.png"
               loading="lazy"
               width="20"
               height="20"
               alt="speedometer low"
               class="speed_on-top"
             /><img
-              src="../assets/icons/speedometer-1.png"
+              src="./assets/icons/speedometer-1.png"
               loading="lazy"
               width="20"
               height="20"
@@ -199,7 +372,7 @@
             class="motivation_wrapper"
           >
             <img
-              src="../assets/icons/megaphone.svg"
+              src="./assets/icons/megaphone.svg"
               loading="lazy"
               width="100"
               height="100"
@@ -219,7 +392,7 @@
             class="motivation_wrapper"
           >
             <img
-              src="../assets/icons/handshake.svg"
+              src="./assets/icons/handshake.svg"
               loading="lazy"
               width="100"
               height="100"
@@ -239,7 +412,7 @@
             class="motivation_wrapper"
           >
             <img
-              src="../assets/icons/internship.svg"
+              src="./assets/icons/internship.svg"
               loading="lazy"
               width="100"
               height="100"
@@ -256,7 +429,7 @@
           </div>
         </div>
         <img
-          src="../assets/bg_img/sponsor_bg_img_top_right.svg"
+          src="./assets/bg_img/sponsor_bg_img_top_right.svg"
           loading="lazy"
           alt=""
           class="bg_img center_right"
@@ -314,7 +487,7 @@
                         rgba(24, 24, 24, 0.95) 45%,
                         transparent
                       ),
-                      url('../assets/articles/presentazione2024.jpg');
+                      url('./assets/articles/presentazione2024.jpg');
                   "
                 >
                   <div class="date-block_slide_article">JUL. 2024</div>
@@ -339,7 +512,7 @@
                         rgba(24, 24, 24, 0.95) 45%,
                         transparent
                       ),
-                      url('../assets/articles/linkedin_ata_2023.jpeg');
+                      url('./assets/articles/linkedin_ata_2023.jpeg');
                   "
                 >
                   <div class="date-block_slide_article">JUL. 2023</div>
@@ -364,7 +537,7 @@
                         rgba(24, 24, 24, 0.95) 45%,
                         transparent
                       ),
-                      url('../assets/articles/rai2.png');
+                      url('./assets/articles/rai2.png');
                   "
                 >
                   <div class="date-block_slide_article">OCT. 2022</div>
@@ -389,7 +562,7 @@
                         rgba(24, 24, 24, 0.95) 45%,
                         transparent
                       ),
-                      url('../assets/articles/ildolomiti.jpg');
+                      url('./assets/articles/ildolomiti.jpg');
                   "
                 >
                   <div class="date-block_slide_article">SEPT. 2022</div>
@@ -414,7 +587,7 @@
                         rgba(24, 24, 24, 0.95) 45%,
                         transparent
                       ),
-                      url('../assets/articles/motorsport.jpg');
+                      url('./assets/articles/motorsport.jpg');
                   "
                 >
                   <div class="date-block_slide_article">JUL. 2022</div>
@@ -459,7 +632,7 @@
               <!-- <div class="w-icon-slider-left"></div> -->
               <img
                 class="w-icon-slider-left"
-                src="../assets/icons/left-arrow.png"
+                src="./assets/icons/left-arrow.png"
                 loading="lazy"
                 alt=""
               />
@@ -468,7 +641,7 @@
               <!-- <div class="w-icon-slider-right"></div> -->
               <img
                 class="w-icon-slider-right"
-                src="../assets/icons/right-arrow.png"
+                src="./assets/icons/right-arrow.png"
                 loading="lazy"
                 alt=""
               />
@@ -477,36 +650,7 @@
           </div>
         </div>
       </div>
-      <div class="sponsors_container">
-        <h2 class="heading_sponsor">Our Sponsor</h2>
-        <div class="sub-sponsor_wrapper">
-          <div class="brands_container">
-            <!-- <img
-              src="./assets/sponsors/main.svg"
-              loading="lazy"
-              width="500"
-              alt=""
-              class="brand_image"
-            /> -->
 
-            <img
-                  src="../assets/sponsors/all-sponsors.png"
-                  loading="lazy"      
-                  usemap="#sponsormap"            
-                  alt=""
-                  class="sponsor"
-              />
-
-          </div>
-        
-    </div>
-        <img
-          src="../assets/bg_img/sponsor_bg_img_right.svg"
-          loading="lazy"
-          alt=""
-          class="bg_img top_right"
-        />
-      </div>
     </div>
     <!-- FOOTER BEGINS -->
     <div class="footer">
@@ -568,7 +712,7 @@
           class="inline_icon_text-footer w-inline-block"
           target="_blank"
           ><img
-            src="../assets/social_media_icons/github.png"
+            src="./assets/social_media_icons/github.png"
             loading="lazy"
             width="Auto"
             height="Auto"
@@ -581,7 +725,7 @@
           class="inline_icon_text-footer w-inline-block"
           target="_blank"
           ><img
-            src="../assets/social_media_icons/youtube.png"
+            src="./assets/social_media_icons/youtube.png"
             loading="lazy"
             width="Auto"
             height="Auto"
@@ -594,7 +738,7 @@
           class="inline_icon_text-footer w-inline-block"
           target="_blank"
           ><img
-            src="../assets/social_media_icons/instagram.png"
+            src="./assets/social_media_icons/instagram.png"
             loading="lazy"
             width="Auto"
             height="Auto"
@@ -608,7 +752,7 @@
           class="inline_icon_text-footer w-inline-block"
           target="_blank"
           ><img
-            src="../assets/social_media_icons/linkedin.png"
+            src="./assets/social_media_icons/linkedin.png"
             loading="lazy"
             width="Auto"
             height="Auto"
@@ -622,7 +766,7 @@
           class="inline_icon_text-footer w-inline-block"
           target="_blank"
           ><img
-            src="../assets/social_media_icons/facebook.png"
+            src="./assets/social_media_icons/facebook.png"
             loading="lazy"
             width="Auto"
             height="Auto"
@@ -649,7 +793,7 @@
         <div class="legal_font">© 2023 E-Agle. All rights reserved.</div>
         <div class="legal_font">P.IVA: 02446060226</div>
         <img
-          src="../assets/logo/white_brand.svg"
+          src="./assets/logo/white_brand.svg"
           loading="lazy"
           width="150"
           height="150"
@@ -665,7 +809,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="../app.min.js" type="text/javascript"></script>
+    <script src="./app.min.js" type="text/javascript"></script>
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->

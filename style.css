@@ -2131,6 +2131,14 @@ body {
   font-family: Arial;
 }
 
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #282828;  /* Puoi modificarlo come preferisci */
+}
 
 
 .navbar_link.w-current {
@@ -2309,6 +2317,14 @@ body {
 .secondary_btn.apply_action:hover {
   color: #141414;
 }
+@media (max-width: 768px) {
+  .secondary_btn {
+    max-width: 100%; /* Adatta la larghezza del pulsante */
+    padding: 10px 15px; /* Aumenta il padding per un tocco più facile */
+    font-size: 12px;
+  }
+}
+
 
 .image {
   opacity: 1;
@@ -2367,6 +2383,7 @@ body {
   position: relative;
 }
 
+
 .template_section.chi-siamo_div {
   grid-row-gap: 15px;
 }
@@ -2383,6 +2400,71 @@ body {
 .template_section.specs {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .template_section table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template_section td:nth-child(1) {
+    order: 1;
+  }
+
+  .template_section td:nth-child(2) {
+    order: 2;
+    margin-top: 10px;
+  }
+
+  .template_section td:nth-child(3) {
+    order: 3;
+    margin-top: 15px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .secondary_btn {
+    max-width: 200px;
+    width: auto;
+  }
+
+  .template_section table:nth-of-type(1) td:nth-child(1) {
+    order: 1;
+  }
+
+  .template_section table:nth-of-type(1) td:nth-child(3) {
+    order: 2;
+  }
+
+  .template_section table:nth-of-type(2) td:nth-child(1) {
+    order: 1;
+  }
+
+  .template_section table:nth-of-type(2) td:nth-child(3) {
+    order: 2;
+  }
+
+  .template_section table:nth-of-type(3) td:nth-child(1) {
+    order: 1;
+  }
+
+  .template_section table:nth-of-type(3) td:nth-child(3) {
+    order: 2;
+  }
+}
+
+
+
 
 .heading {
   color: #f3ff14;
@@ -2428,6 +2510,13 @@ body {
   line-height: 35px;
   font: Times !important;
 }
+@media (max-width: 768px) {
+  .text-block_template {
+    line-height: 24px;
+    font-size: 14px;
+  }
+}
+
 
 .clip_section {
   min-width: 100%;
@@ -3417,6 +3506,9 @@ body {
   text-align: center;
 
 }
+.partner_title{
+  margin: 80px;
+}
 
 .teams_wrapper {
   min-width: 100%;
@@ -3646,6 +3738,7 @@ body {
   max-width: 1150px;
   padding-left: 50px;
   padding-right: 50px;
+  margin-top: 80px;
 }
 
 .social_icons_grid {
