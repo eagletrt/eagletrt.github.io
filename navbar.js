@@ -1,6 +1,6 @@
 // Funzione per gestire la visibilità delle bandiere
 function toggleFlags() {
-  const isMobile = window.innerWidth <= 768; // Controlla se è un dispositivo mobile
+  const isMobile = window.innerWidth <= 999; // Controlla se è un dispositivo mobile
   const flagMobile = document.querySelector('.flag-mobile');
   const flagDesktop = document.querySelector('.flag-desktop');
 
