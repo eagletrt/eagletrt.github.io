@@ -6,6 +6,32 @@
 <head>
   <script src="navbar.js"></script>
   <script>
+    function toggleTooltip(element) {
+      // Chiude tutti i tooltip aperti prima di aprire il nuovo
+      document.querySelectorAll('.tooltip').forEach(tooltip => {
+        tooltip.classList.remove('visible');
+      });
+
+      // Apre il tooltip dell'elemento cliccato
+      const tooltip = element.querySelector('.tooltip');
+      if (tooltip) {
+        tooltip.classList.toggle('visible');
+      }
+    }
+
+    // Chiude il tooltip se si clicca fuori
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.formula_event_wrapper')) {
+        document.querySelectorAll('.tooltip').forEach(tooltip => {
+          tooltip.classList.remove('visible');
+        });
+      }
+    });
+
+  </script>
+  
+
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
@@ -45,8 +71,8 @@
 </head>
 
 <body class="body">
-      <!-- LOADING ANIMATION -->
-      <!-- <div
+  <!-- LOADING ANIMATION -->
+  <!-- <div
           data-w-id="32410867-ff7c-f70b-3d4e-44a3a36e12b2"
           style="display: flex"
           class="loading_container"
@@ -59,12 +85,9 @@
             class="logo_pulsing"
           />
           </div> -->
-      <div
-    data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e"
-    class="navbar-logo-left wf-section"
-  >
+  <div data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e" class="navbar-logo-left wf-section">
     <!-- APPLICATION BANNER BEGINS -->
-   <!-- <div class="candidati_banner">
+    <!-- <div class="candidati_banner">
       <div class="banner_text-block">
         Applications are open!
         <br />
@@ -72,54 +95,50 @@
       <a href="https://jobs.eagletrt.it/" class="candidati_btn w-button">Apply now</a>
     </div>-->
     <!-- APPLICATION BANNER ENDS -->
-    <div
-      data-animation="default"
-      data-collapse="medium"
-      data-duration="400"
-      data-easing="ease"
-      data-easing2="ease"
-      role="banner"
-      class="navbar-logo-left-container shadow-three w-nav"
-    >
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+      role="banner" class="navbar-logo-left-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper">
           <div class="navbar-logo">
             <a href="index.html" class="navbar-brand w-nav-brand">
-              <img
-              src="white_brand.svg"
-              loading="lazy"
-              height="80"
-              width="170"
-              alt="eagle white brand logo"/>
+              <img src="white_brand.svg" loading="lazy" height="80" width="170" alt="eagle white brand logo" />
             </a>
           </div>
           <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
             <ul role="list" class="nav-menu-two w-list-unstyled">
               <li>
-                <a href="chi_siamo.html" class="navbar_link"><h4>Chi Siamo</h4></a>
+                <a href="chi_siamo.html" class="navbar_link">
+                  <h4>Chi Siamo</h4>
+                </a>
               </li>
-              <li><a href="team.html" class="navbar_link "><h4>Team</h4></a></li>
-              <li><a href="https://jobs.eagletrt.it/" class="navbar_link"><h4>Jobs</h4></a></li>
-              <li><a href="garage.html" class="navbar_link"><h4>Garage</h4></a></li>
+              <li><a href="team.html" class="navbar_link ">
+                  <h4>Team</h4>
+                </a></li>
+              <li><a href="https://jobs.eagletrt.it/" class="navbar_link">
+                  <h4>Jobs</h4>
+                </a></li>
+              <li><a href="garage.html" class="navbar_link">
+                  <h4>Garage</h4>
+                </a></li>
               <li>
-                <a href="Formula_Student.html" class="navbar_link w-current"><h4>Formula Student</h4></a>
+                <a href="Formula_Student.html" class="navbar_link w-current">
+                  <h4>Formula Student</h4>
+                </a>
               </li>
               <li>
-                <a href="per_le_aziende.html" class="navbar_link"><h4>Partners</h4></a>
+                <a href="per_le_aziende.html" class="navbar_link">
+                  <h4>Partners</h4>
+                </a>
               </li>
-              <li><a href="eventi.html" class="navbar_link"><h4>Eventi</h4></a></li>
-              <li >
+              <li><a href="eventi.html" class="navbar_link">
+                  <h4>Eventi</h4>
+                </a></li>
+              <li>
                 <!-- Bandiera Mobile -->
-                <div  >
+                <div>
                   <a href="Formula_Student_en.html">
-                    <img
-                    class="flag-mobile"
-                      src="./assets/icons/lang/en.png"
-                      loading="eager"
-                      width="25"
-                      height="25"
-                      alt="United Kingdom flag"
-                    />
+                    <img class="flag-mobile" src="./assets/icons/lang/en.png" loading="eager" width="25" height="25"
+                      alt="United Kingdom flag" />
                   </a>
                 </div>
               </li>
@@ -128,245 +147,126 @@
           <!-- Bandiera Desktop -->
           <div class="flag-desktop">
             <a href="Formula_Student_en.html">
-              <img
-                src="./assets/icons/lang/en.png"
-                loading="eager"
-                width="25"
-                height="25"
-                alt="United Kingdom flag"
-              />
+              <img src="./assets/icons/lang/en.png" loading="eager" width="25" height="25" alt="United Kingdom flag" />
             </a>
           </div>
           <div class="menu-button w-nav-button">
             <!-- <div class="w-icon-nav-menu"></div> -->
-            <img
-              src="./assets/icons/menu.png"
-              loading="lazy"
-              alt="menu icon"
-              height="20"
-              width="20"
-            />
+            <img src="./assets/icons/menu.png" loading="lazy" alt="menu icon" height="20" width="20" />
           </div>
         </div>
       </div>
     </div>
-    </div>
   </div>
-  <br>
-  <br>
-  <div class="img_section">
-    <div class="img-overlay">
-      <img src="20240816_13-40-59_8382_maru.jpg" class="background-img img-vivida">
-    </div>
-    <div class="copyright">©FSG   ©Maru</div>
   </div>
-  
-  
+
+ <div class="img_section">
+  <div class="img-overlay">
+    <img src="20240816_13-40-59_8382_maru.jpg" class="background-img img-vivida img-mob">
+    <div class="caption">
+      <span class="formula">Formula</span>
+      <span class="student">Student</span>
+    </div>
+    <div class="copyright">©FSG ©Maru</div>
+  </div>
+</div>
+
+
+
   <div class="playground">
     <div class="template_section">
       <h2 class="heading_template">Formula Student</h2>
       <div class="text-block_template">
-        <i
-          >La <strong>Formula SAE</strong> è una competizione universitaria
-          internazionale di design ingegneristico proposta inizialmente dalla
-          <a target="_blank" href="https://it.wikipedia.org/wiki/Society_of_Automotive_Engineers" class="custom-link">Society of Automotive Engineers</a>
-          (SAE).
-        </i>
-        <br />
-        Questo arriva da Wikipedia ma le competizioni a cui partecipiamo noi
-        non hanno legami con la SAE, sono organizzate autonomamente
-        <br /><br />L’iniziativa, nata nel 1981, prevede la progettazione e la
-        produzione di una veicolo da corsa. Un’esperienza che dà la
-        possibilità di passare dalla teoria alla pratica. Essa permette di
+        La Formula Student, versione europea della Formula SAE, è una competizione universitaria
+        internazionale di design ingegneristico proposta inizialmente dalla
+        <i>Society of Automotive Engineers</i>  
+        (SAE) nel 1981. 
+        <br /><br />L’iniziativa è arrivata in Europa dal 1998 e prevede la progettazione e la
+        produzione di una veicolo da corsa. Questa esperienza dà la
+        possibilità di passare dalla teoria alla pratica, permettendo di
         unire quanto appreso a lezione con lo spirito di squadra, l'entusiasmo
-        e la creatività, producendo il <em>bolide</em> dalle migliori
-        prestazioni. Durante la competetizione si viene valutati sulla base di
+        e la creatività, producendo un <em>bolide</em> dalle migliori
+        prestazioni.<br /><br />Il progetto consiste nella
+        produzione di un'auto da corsa, seguendo tutti i passaggi della
+        filiera <em>(progettazione, modellazione, collaudo e uso)</em> e durante la competetizione si viene valutati sulla base di
         una serie di prove riguardanti la <strong>qualità</strong>
-        <strong>del</strong> <strong>design</strong> e per l’<strong
-          >efficienza</strong
-        >
-        <strong>ingegneristica</strong>.<br /><br />Il progetto consiste nella
-        produzione di un’auto da corsa, seguendo tutti i passaggi della
-        filiera <em>(progettazione, modellazione, collaudo e uso)</em>.
-        <br />Il veicolo deve rispettare rigide normative, riguardanti i
-        requisiti tecnici, che influenzano le scelte prese durante la
-        progettazione. Noi ci basiamo sul <strong>regolamento</strong>
-        <strong>ufficiale</strong> di <strong>FSG</strong>.<br /><br />‍Ogni
+        <strong>del</strong> <strong>design</strong> e l'<strong>efficienza</strong>
+        <strong>ingegneristica</strong>.
+        <br />Il veicolo deve rispettare <b>rigide normative</b> e il nostro, per quanto riguarda requisiti tecnici, segue il regolamento ufficiale di <b>Formula Student Germany </b>(FSG). <br /><br />‍Ogni
         anno si tengono eventi di Formula Student in diverse parti del mondo,
-        dove una commissione valuta lo sviluppo e l&#x27;impatto ambientale
-        del progetto. Successivamente, l&#x27;efficienza e la potenza del
+        dove una commissione valuta lo sviluppo e l'impatto ambientale
+        del progetto. Successivamente, l'efficienza e la potenza del
         veicolo vengono testate in una serie di test dinamici su pista.
       </div>
-      <a
-        data-w-id="c9dd513b-8058-1be7-e8d0-58a8bd5fe658"
-        href="https://www.formulastudent.de/fsg/rules/"
-        target="_blank"
-        class="secondary_btn w-inline-block"
-        ><div class="text-block_btn">Scopri di più</div>
+      <a data-w-id="c9dd513b-8058-1be7-e8d0-58a8bd5fe658" href="https://www.formulastudent.de/about" target="_blank"
+        class="secondary_btn w-inline-block" style="margin-top: 1.5vh;">
+        <div class="text-block_btn">Scopri di più</div>
         <div class="speedmeter_container">
-          <img
-            src="./assets/icons/speedometer-0.png"
-            loading="lazy"
-            width="20"
-            height="20"
-            alt="speedometer low"
-            class="speed_on-top"
-          /><img
-            src="./assets/icons/speedometer-1.png"
-            loading="lazy"
-            width="20"
-            height="20"
-            alt="speedometer high"
-            class="speed_below speed_icon"
-          /></div
-      ></a>
+          <img src="./assets/icons/speedometer-0.png" loading="lazy" width="20" height="20" alt="speedometer low"
+            class="speed_on-top" /><img src="./assets/icons/speedometer-1.png" loading="lazy" width="20" height="20"
+            alt="speedometer high" class="speed_below speed_icon" />
+        </div>
+      </a>
     </div>
     <div class="template_section competition_structure">
       <h2 class="heading_template">La struttura della competizione</h2>
       <div class="text-block_template">
-        Le competizioni sono composte da 8 eventi, raggruppati in due
-        macrogruppi: <strong>statici</strong> e
-        <strong>dinamici</strong>.<br />
+        Le competizioni sono composte da 8 eventi, raggruppati in due macrogruppi: <strong>statici</strong> e <strong>dinamici</strong>.
       </div>
       <div class="formula_events_wrapper">
+        <!-- Eventi statici -->
         <div class="sub-formula_events_container">
           <div class="formula_event_title">Eventi statici</div>
-          <div class="w-layout-grid formula_events_grid">
-            <div
-              id="w-node-_66921710-48f8-7516-0c2a-4b72c06e9062-0700a87c"
-              class="formula_event_wrapper"
-            >
-              <img
-                src="./assets/icons/static_dynamic_events/engineering_design.svg"
-                loading="lazy"
-                width="50"
-                height="50"
-                alt=""
-                class="events_icon"
-              />
-              <div>Engineering<br />Design</div>
+          <div class="w-layout-grid formula_events_grid two-rows">
+
+            <div class="formula_event_wrapper" onclick="toggleTooltip(this)">
+              <img src="./assets/icons/static_dynamic_events/business_plan.svg" loading="lazy" width="50" height="50" alt="" class="events_icon" />
+              <div class="event_name">Business Plan</div>
+              <span class="tooltip">Presentazione di un modello di business relativo ad un prodotto creato a partire dall’auto.</span>
             </div>
-            <div
-              id="w-node-_92b9b561-e0b9-bdc0-3bba-151519d7d387-0700a87c"
-              class="formula_event_wrapper"
-            >
-              <img
-                src="./assets/icons/static_dynamic_events/business_plan.svg"
-                loading="lazy"
-                width="50"
-                height="50"
-                alt=""
-                class="events_icon"
-              />
-              <div>Business<br />Plan</div>
+            <div class="formula_event_wrapper" onclick="toggleTooltip(this)">
+              <img src="./assets/icons/static_dynamic_events/cost_report.svg" loading="lazy" width="50" height="50" alt="" class="events_icon" />
+              <div class="event_name">Cost Report</div>
+              <span class="tooltip">Apresentazione di tutti i costi e ore di lavoro impiegate per ogni componente.</span>
             </div>
-            <div
-              id="w-node-_8188536d-dbdc-7831-bd91-c9f19f7d5b26-0700a87c"
-              class="formula_event_wrapper"
-            >
-              <img
-                src="./assets/icons/static_dynamic_events/cost_report.svg"
-                loading="lazy"
-                width="50"
-                height="50"
-                alt=""
-                class="events_icon"
-              />
-              <div>Cost Report</div>
+            
+            <div class="formula_event_wrapper" onclick="toggleTooltip(this)">
+              <img src="./assets/icons/static_dynamic_events/engineering_design.svg" loading="lazy" width="50" height="50" alt="" class="events_icon" />
+              <div class="event_name">Engineering Design</div>
+              <span class="tooltip">Valutazione complessiva del design ingegneristico della monoposto.</span>
             </div>
-            <!--
-            <div
-              id="w-node-e73588f4-2724-4ffe-36f8-4cda0f057220-0700a87c"
-              class="formula_event_wrapper"
-            >
-              <img
-                src="./assets/icons/static_dynamic_events/tecnhinal_inspections.svg"
-                loading="lazy"
-                width="50"
-                height="50"
-                alt=""
-                class="events_icon"
-              />
-              <div>Technical<br />Inspections</div>
-            </div>
-          -->
+          
           </div>
         </div>
+        <!-- Eventi dinamici -->
         <div class="sub-formula_events_container">
           <div class="formula_event_title">Eventi dinamici</div>
-          <div class="w-layout-grid formula_events_grid">
-            <div
-              id="w-node-_8d0544b3-2238-a33f-74f0-bc3bd0aeb68f-0700a87c"
-              class="formula_event_wrapper"
-            >
-              <img
-                src="./assets/icons/static_dynamic_events/skidpad.svg"
-                loading="lazy"
-                width="50"
-                height="50"
-                alt=""
-                class="events_icon"
-              />
-              <div>Skidpad</div>
+          <div class="w-layout-grid formula_events_grid two-rows">
+            <div class="formula_event_wrapper" onclick="toggleTooltip(this)">
+              <img src="./assets/icons/static_dynamic_events/skidpad.svg" loading="lazy" width="50" height="50" alt="" class="events_icon" />
+              <div class="event_name">Skidpad</div>
+              <span class="tooltip"> Percorso ad “8” da completare nel minor tempo possibile.</span>
             </div>
-            <div
-              id="w-node-_8d0544b3-2238-a33f-74f0-bc3bd0aeb695-0700a87c"
-              class="formula_event_wrapper"
-            >
-              <img
-                src="./assets/icons/static_dynamic_events/acceleration.svg"
-                loading="lazy"
-                width="50"
-                height="50"
-                alt=""
-                class="events_icon"
-              />
-              <div>Acceleration</div>
+            <div class="formula_event_wrapper" onclick="toggleTooltip(this)">
+              <img src="./assets/icons/static_dynamic_events/acceleration.svg" loading="lazy" width="50" height="50" alt="" class="events_icon" />
+              <div class="event_name">Acceleration</div>
+              <span class="tooltip">L'auto percorre 75m in accelerazione partendo da ferma.</span>
             </div>
-            <div
-              id="w-node-_8d0544b3-2238-a33f-74f0-bc3bd0aeb69b-0700a87c"
-              class="formula_event_wrapper"
-            >
-              <img
-                src="./assets/icons/static_dynamic_events/autocross.svg"
-                loading="lazy"
-                width="50"
-                height="50"
-                alt=""
-                class="events_icon"
-              />
-              <div>Autocross</div>
+            <div class="formula_event_wrapper" onclick="toggleTooltip(this)">
+              <img src="./assets/icons/static_dynamic_events/autocross.svg" loading="lazy" width="50" height="50" alt="" class="events_icon" />
+              <div class="event_name">Autocross</div>
+              <span class="tooltip">Giro cronometrato su un tracciato con rettilinei, curve, chicane e slalom.</span>
             </div>
-            <div
-              id="w-node-_8d0544b3-2238-a33f-74f0-bc3bd0aeb69f-0700a87c"
-              class="formula_event_wrapper"
-            >
-              <img
-                src="./assets/icons/static_dynamic_events/endurance.svg"
-                loading="lazy"
-                width="50"
-                height="50"
-                alt=""
-                class="events_icon"
-              />
-              <div>Endurance</div>
+            <div class="formula_event_wrapper" onclick="toggleTooltip(this)">
+              <img src="./assets/icons/static_dynamic_events/endurance.svg" loading="lazy" width="50" height="50" alt="" class="events_icon" />
+              <div class="event_name">Endurance</div>
+              <span class="tooltip">Una gara di 22km mirata a testare l’affidabilità e la performance della macchina.</span>
             </div>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/bg_img/chi_siamo_bg_img_left.svg"
-        loading="lazy"
-        alt=""
-        class="bg_img up_left"
-      /><img
-        src="./assets/bg_img/chi_siamo_bg_img_right.svg"
-        loading="lazy"
-        alt=""
-        class="bg_img center_right"
-      />
+      </div> 
     </div>
-  </div>
+    
   <!-- FOOTER BEGINS -->
   <div class="footer">
     <div class="horizontal_separator"></div>
