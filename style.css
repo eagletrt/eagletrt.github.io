@@ -30,6 +30,11 @@ a {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.event_link {
+  text-decoration: none;
+  color: inherit;
+}
+
 a:active, a:hover {
   outline: 0;
 }
@@ -2636,7 +2641,7 @@ body {
   bottom: 20px;
   left: 20px;
   color: white;
-  font-size: 150px;
+  font-size: 100px;
   font-weight: arial;
   z-index: 1;
   margin-bottom: 4rem;
@@ -4104,6 +4109,7 @@ body {
 
 .slide_bg-image_container {
   height: 100%;
+  background-size: cover;
   background-image: linear-gradient(to top, rgba(24, 24, 24, .95), rgba(24, 24, 24, .95) 30%, rgba(0, 0, 0, 0)), url("https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64045e9ae0dbaf056e3ec37d_germanym_hockenheimring.jpg");
   background-position: 0 0, 50%;
   background-size: auto, cover;
@@ -4115,6 +4121,7 @@ body {
   padding-right: 35px;
   display: flex;
   position: relative;
+
 }
 
 .slide_bg-image_container.article {
@@ -4122,6 +4129,40 @@ body {
   background-position: 0 0, 50%;
   background-size: auto, cover;
   padding-bottom: 15px;
+}
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .slide_bg-image_container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .slide_bg-image_container.article {
+    padding-bottom: 10px;
+  }
+
+  /* Adjust background size for smaller screens */
+  .slide_bg-image_container {
+    background-size: cover, cover;
+  }
+}
+
+/* Media query for smartphones */
+@media (max-width: 480px) {
+  .slide_bg-image_container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .slide_bg-image_container.article {
+    padding-bottom: 5px;
+  }
+
+  /* Adjust background positioning and size for smartphones */
+  .slide_bg-image_container {
+    background-size: cover, cover;
+    background-position: center center, 50%;
+  }
 }
 
 .mask {
@@ -4140,6 +4181,7 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: .75rem;
+  text-decoration: none;
 }
 
 .title-block_slide_event {
@@ -5312,12 +5354,10 @@ body {
     text-decoration: none !important;
   }
   .event_slide {
+    padding-top: 0;
+    padding-left: 25px;
+    padding-right: 25px;
     position: relative; /* Assicurati che l'evento abbia una posizione relativa per il link assoluto */
-  }
-  
-
-  
-  .event_slide {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -5463,11 +5503,7 @@ body {
     grid-column-gap: 50px;
   }
 
-  .event_slide {
-    padding-top: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+
 
   .event_slider {
     width: 300px;
