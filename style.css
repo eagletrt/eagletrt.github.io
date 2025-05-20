@@ -3278,6 +3278,9 @@ body {
     transform: scale(1.2); /* Mantieni uno zoom moderato */
     margin-left: 0;
   }
+  .increse_width{
+    margin-left: 7px;
+  }
 
   .increse_width:hover, .increse_height:hover, .increse:hover {
     transform: scale(1.2); /* Riduci l'effetto hover */
