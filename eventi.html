@@ -7,7 +7,7 @@
   data-wf-site="6401ed150a210b785600a87b"
 >
   <head>
-    
+    <script src="navbar.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -17,6 +17,9 @@
 
       gtag("config", "G-W23X3MK46Y");
     </script>
+
+
+
     <meta charset="utf-8" />
     <title>E-Agle - Eventi</title>
     <meta
@@ -48,16 +51,14 @@
       data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e"
       class="navbar-logo-left wf-section"
     >
-<!-- APPLICATION BANNER BEGINS -->
-      <div class="candidati_banner">
+      <!-- APPLICATION BANNER BEGINS -->
+     <!-- <div class="candidati_banner">
         <div class="banner_text-block">
           Applications are open!
           <br />
         </div>
-        <a href="https://jobs.eagletrt.it/" class="candidati_btn w-button"
-          >Apply now</a
-        >
-      </div>
+        <a href="https://jobs.eagletrt.it/" class="candidati_btn w-button">Apply now</a>
+      </div>-->
       <!-- APPLICATION BANNER ENDS -->
       <div
         data-animation="default"
@@ -70,51 +71,61 @@
       >
         <div class="container">
           <div class="navbar-wrapper">
-            <a href="/" class="navbar-brand w-nav-brand"
-              ><img
-                src="./assets/logo/white_brand.svg"
+            <div class="navbar-logo">
+              <a href="index.html" class="navbar-brand w-nav-brand">
+                <img
+                src="white_brand.svg"
                 loading="lazy"
-                height="75"
-                width="75"
-                alt="eagle white brand logo"
-            /></a>
+                height="80"
+                width="170"
+                alt="eagle white brand logo"/>
+              </a>
+            </div>
             <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
               <ul role="list" class="nav-menu-two w-list-unstyled">
+
                 <li>
-                  <a href="/" class="navbar_link">Home</a>
+                  <a href="chi_siamo.html" class="navbar_link"><h4>Chi Siamo</h4></a>
+                </li>
+                <li><a href="team.html" class="navbar_link"><h4>Team</h4></a></li>
+                <li><a href="https://jobs.eagletrt.it/" class="navbar_link"><h4>Jobs</h4></a></li>
+                <li><a href="garage.html" class="navbar_link"><h4>Garage</h4></a></li>
+                <li>
+                  <a href="Formula_Student.html" class="navbar_link"><h4>Formula Student</h4></a>
                 </li>
                 <li>
-                  <a href="/chi_siamo" class="navbar_link">Chi siamo</a>
+                  <a href="per_le_aziende.html" class="navbar_link"><h4>Partners</h4></a>
                 </li>
-                <li><a href="/team" class="navbar_link">Team</a></li>
-                <li><a href="https://jobs.eagletrt.it/" class="navbar_link">Positions</a></li>
-                <li><a href="/garage" class="navbar_link">Garage</a></li>
-                <li>
-                  <a href="/per_le_aziende" class="navbar_link"
-                    >Per le aziende</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/eventi"
-                    aria-current="page"
-                    class="navbar_link w--current"
-                    >Eventi</a
-                  >
-                </li>
-                <li>
-                  <a href="/en/eventi" class="w-inline-block"
-                    ><img
-                      src="./assets/icons/lang/en.png"
-                      loading="eager"
-                      width="25"
-                      height="25"
-                      alt="united kingdom flag"
-                      sizes="(max-width: 991px) 100vw, 25px"
-                  /></a>
+                <li><a href="eventi.html" class="navbar_link w-current"><h4>Eventi</h4></a></li>
+                <li >
+                  <!-- Bandiera Mobile -->
+                  <div  >
+                    <a href="eventi_en.html">
+                      <img
+                      class="flag-mobile"
+                        src="./assets/icons/lang/en.png"
+                        loading="eager"
+                        width="25"
+                        height="25"
+                        alt="United Kingdom flag"
+                      />
+                    </a>
+                  </div>
                 </li>
               </ul>
             </nav>
+            <!-- Bandiera Desktop -->
+            <div class="flag-desktop">
+              <a href="eventi_en.html">
+                <img
+                  src="./assets/icons/lang/en.png"
+                  loading="eager"
+                  width="25"
+                  height="25"
+                  alt="United Kingdom flag"
+                />
+              </a>
+            </div>
             <div class="menu-button w-nav-button">
               <!-- <div class="w-icon-nav-menu"></div> -->
               <img
@@ -129,15 +140,12 @@
         </div>
       </div>
     </div>
-    <br>
-    <br>
     <div class="playground">
       <div class="events_wrapper">
         <div class="header_wrapper">
           <h1 class="heading">Eventi</h1>
           <div class="text-block_template">
-            In questa pagina puoi trovare gli eventi a cui è presente il nostro
-            team.
+            In questa pagina puoi trovare gli eventi a cui abbiamo partecipato.
           </div>
         </div>
         <div
@@ -173,7 +181,76 @@
                 </div>
               </div>
             </div> -->
+            <div class="event_slide w-slide w-slide" >
+              <a href="https://www.luniversitario.it/2025/03/29/hydras-anatomy-intervista-alle-agle-trento-team-racing/" class="event_link" target="_blank">
+                <div
+                  class="slide_bg-image_container w-container"
+                  style="
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(24, 24, 24, 0.75),
+                        rgba(24, 24, 24, 0.75) 30%,
+                        transparent),
+                      url('./assets/events/BSO00025.jpg');">
+                  <div class="date-block_slide_event" >29 Mar. 2025</div>
+                  <div class="title-block_slide_event" >Hydra's Anatomy</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="event_slide w-slide w-slide" >
+              <a href="https://www.autotecnica.org/formula-sae-italy-teoresi-premia-e-agle-trento-racing-team/" class="event_link" target="_blank">
+                <div
+                  class="slide_bg-image_container w-container"
+                  style="
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(24, 24, 24, 0.75),
+                        rgba(24, 24, 24, 0.75) 30%,
+                        transparent),
+                      url('./assets/events/1-4-1024x679.jpg');">
+                  <div class="date-block_slide_event" >Set. 2024</div>
+                  <div class="title-block_slide_event" >Premio Teoresi</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="event_slide w-slide w-slide">
+              <a href="https://www.gazzetta.it/Motori/09-09-2024/formula-sae-2024-i-vincitori-e-le-monoposto-protagoniste-in-pista-a-varano.shtml" class="event_link" target="_blank">
+                <div
+                  class="slide_bg-image_container w-container"
+                  style="
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(24, 24, 24, 0.75),
+                        rgba(24, 24, 24, 0.75) 30%,
+                        transparent),
+                      url('./assets/events/BSO09897.jpg');">
+                  <div class="date-block_slide_event" style="color: white;">4-8 Set 2024</div>
+                  <div class="title-block_slide_event" style="color: white;">Varano</div>
+                </div>
+              </a>
+            </div>
+            <div class="event_slide w-slide w-slide">
+              <a href="https://mag.unitn.it/sport/121065/in-pista" class="event_link" target="_blank">
+                <div
+                  class="slide_bg-image_container w-container"
+                  style="
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(24, 24, 24, 0.75),
+                        rgba(24, 24, 24, 0.75) 30%,
+                        transparent),
+                      url('./assets/events/Rollout/_MG_8145.jpg');">
+                  <div class="date-block_slide_event" style="color: white;">5 Lug. 2024</div>
+                  <div class="title-block_slide_event" style="color: white;">Rollout</div>
+                </div>
+              </a>
+            </div>
+
+            
             <div class="event_slide w-slide">
+              <a class="event_link">
               <div
                 class="slide_bg-image_container w-container"
                 style="
@@ -189,152 +266,72 @@
                 <div class="date-block_slide_event">6-7 mag. 2023</div>
                 <div class="title-block_slide_event">WIRED NEXT FEST - Rovereto</div>
               </div>
+              </a>
+            </div>
+
+            <div class="event_slide w-slide">
+              <a class="event_link">
+                <div class="slide_bg-image_container w-container" style="background-image: linear-gradient(0deg, rgba(24, 24, 24, 0.75), rgba(24, 24, 24, 0.75) 30%, transparent), url('./assets/events/st_may_23/ST.jpg');">
+                  <div class="date-block_slide_event">4 mag. 2023</div>
+                  <div class="title-block_slide_event">ST Sustainability Days</div>
+                </div>
+              </a>
             </div>
             <div class="event_slide w-slide">
-              <div
-                class="slide_bg-image_container w-container"
-                style="
-                  background-image: linear-gradient(
-                      0deg,
-                      rgba(24, 24, 24, 0.75),
-                      rgba(24, 24, 24, 0.75) 30%,
-                      transparent
-                    ),
-                    url('./assets/events/st_may_23/ST.jpg');
-                "
-              >
-                <div class="date-block_slide_event">4 mag. 2023</div>
-                <div class="title-block_slide_event">ST Sustainability Days</div>
-              </div>
+              <a class="event_link">
+                <div class="slide_bg-image_container w-container" style="background-image: linear-gradient(0deg, rgba(24, 24, 24, 0.75), rgba(24, 24, 24, 0.75) 30%, transparent), url('./assets/events/FestivalDelloSportTrento/16656679571571.jpg');">
+                  <div class="date-block_slide_event">23 set. 2022</div>
+                  <div class="title-block_slide_event">Festival dello Sport</div>
+                  <div class="description-block_slide_event">Description of the event Description of the event Description of the event Description of the event</div>
+                </div>
+              </a>
             </div>
             <div class="event_slide w-slide">
-              <div
-                class="slide_bg-image_container w-container"
-                style="
-                  background-image: linear-gradient(
-                      0deg,
-                      rgba(24, 24, 24, 0.75),
-                      rgba(24, 24, 24, 0.75) 30%,
-                      transparent
-                    ),
-                    url('./assets/events/FestivalDelloSportTrento/16656679571571.jpg');
-                "
-              >
-                <div class="date-block_slide_event">23 set. 2022</div>
-                <div class="title-block_slide_event">Festival dello Sport</div>
-                <div class="description-block_slide_event">
-                  Description of the event Description of the event Description
-                  of the event Description of the event
+              <a class="event_link">
+                <div class="slide_bg-image_container w-container" style="background-image: linear-gradient(0deg, rgba(24, 24, 24, 0.75), rgba(24, 24, 24, 0.75) 30%, transparent), url('./assets/events/FSAEITALY2022/NCT_2543.jpg');">
+                  <div class="date-block_slide_event">2022</div>
+                  <div class="title-block_slide_event">FSAE Italy</div>
+                  <div class="description-block_slide_event">Description of the event Description of the event Description of the event Description of the event</div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="event_slide w-slide">
-              <div
-                class="slide_bg-image_container w-container"
-                style="
-                  background-image: linear-gradient(
-                      0deg,
-                      rgba(24, 24, 24, 0.75),
-                      rgba(24, 24, 24, 0.75) 30%,
-                      transparent
-                    ),
-                    url('./assets/events/FSAEITALY2022/NCT_2543.jpg');
-                "
-              >
-                <div class="date-block_slide_event">2022</div>
-                <div class="title-block_slide_event">FSAE Italy</div>
-                <div class="description-block_slide_event">
-                  Description of the event Description of the event Description
-                  of the event Description of the event
+              <a class="event_link">
+                <div class="slide_bg-image_container w-container" style="background-image: linear-gradient(0deg, rgba(24, 24, 24, 0.75), rgba(24, 24, 24, 0.75) 30%, transparent), url('./assets/events/FSG2022/NCT_5990.jpg');">
+                  <div class="date-block_slide_event">2022</div>
+                  <div class="title-block_slide_event">Formula Student Germany</div>
+                  <div class="description-block_slide_event">Description of the event Description of the event Description of the event Description of the event</div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="event_slide w-slide">
-              <div
-                class="slide_bg-image_container w-container"
-                style="
-                  background-image: linear-gradient(
-                      0deg,
-                      rgba(24, 24, 24, 0.75),
-                      rgba(24, 24, 24, 0.75) 30%,
-                      transparent
-                    ),
-                    url('./assets/events/FSG2022/NCT_5990.jpg');
-                "
-              >
-                <div class="date-block_slide_event">2022</div>
-                <div class="title-block_slide_event">
-                  Formula Student Germany
+              <a class="event_link">
+                <div class="slide_bg-image_container w-container" style="background-image: linear-gradient(0deg, rgba(24, 24, 24, 0.75), rgba(24, 24, 24, 0.75) 30%, transparent), url('./assets/events/MotorValleyFest_26-29maggio2022aModena/NCT_1090.jpg');">
+                  <div class="date-block_slide_event">26-29 mag. 2022</div>
+                  <div class="title-block_slide_event">Motor Valley - Modena</div>
+                  <div class="description-block_slide_event">Description of the event Description of the event Description of the event Description of the event</div>
                 </div>
-                <div class="description-block_slide_event">
-                  Description of the event Description of the event Description
-                  of the event Description of the event
-                </div>
-              </div>
+              </a>
             </div>
             <div class="event_slide w-slide">
-              <div
-                class="slide_bg-image_container w-container"
-                style="
-                  background-image: linear-gradient(
-                      0deg,
-                      rgba(24, 24, 24, 0.75),
-                      rgba(24, 24, 24, 0.75) 30%,
-                      transparent
-                    ),
-                    url('./assets/events/MotorValleyFest_26-29maggio2022aModena/NCT_1090.jpg');
-                "
-              >
-                <div class="date-block_slide_event">26-29 mag. 2022</div>
-                <div class="title-block_slide_event">Motor Valley - Modena</div>
-                <div class="description-block_slide_event">
-                  Description of the event Description of the event Description
-                  of the event Description of the event
+              <a class="event_link">
+                <div class="slide_bg-image_container w-container" style="background-image: linear-gradient(0deg, rgba(24, 24, 24, 0.75), rgba(24, 24, 24, 0.75) 30%, transparent), url('./assets/events/Slalom7Tornanti4agosto2019/elettrica_2.jpg');">
+                  <div class="date-block_slide_event">4 ago. 2019</div>
+                  <div class="title-block_slide_event">Slalom 7 Tornanti</div>
+                  <div class="description-block_slide_event">Description of the event Description of the event Description of the event Description of the event</div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="event_slide w-slide">
-              <div
-                class="slide_bg-image_container w-container"
-                style="
-                  background-image: linear-gradient(
-                      0deg,
-                      rgba(24, 24, 24, 0.75),
-                      rgba(24, 24, 24, 0.75) 30%,
-                      transparent
-                    ),
-                    url('./assets/events/Slalom7Tornanti4agosto2019/elettrica_2.jpg');
-                "
-              >
-                <div class="date-block_slide_event">4 ago. 2019</div>
-                <div class="title-block_slide_event">Slalom 7 Tornanti</div>
-                <div class="description-block_slide_event">
-                  Description of the event Description of the event Description
-                  of the event Description of the event
+              <a class="event_link">
+                <div class="slide_bg-image_container w-container" style="background-image: linear-gradient(0deg, rgba(24, 24, 24, 0.75), rgba(24, 24, 24, 0.75) 30%, transparent), url('./assets/events/E-PrixRoma4aprile2019/DSC_4779.jpg');">
+                  <div class="date-block_slide_event">4 apr. 2019</div>
+                  <div class="title-block_slide_event">E-Prix Roma</div>
+                  <div class="description-block_slide_event">Description of the event Description of the event Description of the event Description of the event</div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="event_slide w-slide">
-              <div
-                class="slide_bg-image_container w-container"
-                style="
-                  background-image: linear-gradient(
-                      0deg,
-                      rgba(24, 24, 24, 0.75),
-                      rgba(24, 24, 24, 0.75) 30%,
-                      transparent
-                    ),
-                    url('./assets/events/E-PrixRoma4aprile2019/DSC_4779.jpg');
-                "
-              >
-                <div class="date-block_slide_event">4 apr. 2019</div>
-                <div class="title-block_slide_event">E-Prix Roma</div>
-                <div class="description-block_slide_event">
-                  Description of the event Description of the event Description
-                  of the event Description of the event
-                </div>
-              </div>
-            </div>
+            
           </div>
           <div class="left-arrow w-slider-arrow-left">
             <!-- <div class="w-icon-slider-left"></div> -->

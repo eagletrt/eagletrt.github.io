@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Fri Mar 24 2023 16:39:05 GMT+0000 (Coordinated Universal Time) -->
 <html lang="it" data-wf-domain="e-agle.webflow.io" data-wf-page="6401ed150a210b770700a87c"
   data-wf-site="6401ed150a210b785600a87b">
 
 <head>
+  <script src="navbar.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -44,66 +45,111 @@
 </head>
 
 <body class="body">
-  <!-- LOADING ANIMATION -->
-  <!-- <div
-      data-w-id="32410867-ff7c-f70b-3d4e-44a3a36e12b2"
-      style="display: flex"
-      class="loading_container"
-    >
-      <img
-        src="./assets/logo/white_brand.svg"
-        loading="lazy"
-        data-w-id="dc0f2acc-ad5a-d8fd-ec81-53cf102ded8b"
-        alt="eagle white brand logo"
-        class="logo_pulsing"
-      />
-    </div> -->
-  <div data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e" class="navbar-logo-left wf-section">
+      <!-- LOADING ANIMATION -->
+      <!-- <div
+          data-w-id="32410867-ff7c-f70b-3d4e-44a3a36e12b2"
+          style="display: flex"
+          class="loading_container"
+        >
+          <img
+            src="./assets/logo/white_brand.svg"
+            loading="lazy"
+            data-w-id="dc0f2acc-ad5a-d8fd-ec81-53cf102ded8b"
+            alt="eagle white brand logo"
+            class="logo_pulsing"
+          />
+          </div> -->
+      <div
+    data-w-id="169c3c7c-3547-50ab-46fd-100ce6b0949e"
+    class="navbar-logo-left wf-section"
+  >
     <!-- APPLICATION BANNER BEGINS -->
-    <div class="candidati_banner">
+   <!-- <div class="candidati_banner">
       <div class="banner_text-block">
         Applications are open!
         <br />
       </div>
       <a href="https://jobs.eagletrt.it/" class="candidati_btn w-button">Apply now</a>
-    </div>
+    </div>-->
     <!-- APPLICATION BANNER ENDS -->
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
-      role="banner" class="navbar-logo-left-container shadow-three w-nav">
+    <div
+      data-animation="default"
+      data-collapse="medium"
+      data-duration="400"
+      data-easing="ease"
+      data-easing2="ease"
+      role="banner"
+      class="navbar-logo-left-container shadow-three w-nav"
+    >
       <div class="container">
         <div class="navbar-wrapper">
-          <a href="/" class="navbar-brand w-nav-brand"><img src="./assets/logo/white_brand.svg" loading="lazy"
-              height="75" width="75" alt="eagle white brand logo" /></a>
+          <div class="navbar-logo">
+            <a href="index.html" class="navbar-brand w-nav-brand">
+              <img
+              src="white_brand.svg"
+              loading="lazy"
+              height="80"
+              width="170"
+              alt="eagle white brand logo"/>
+            </a>
+          </div>
           <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
             <ul role="list" class="nav-menu-two w-list-unstyled">
               <li>
-                <a href="/" class="navbar_link">Home</a>
+                <a href="chi_siamo.html" class="navbar_link"><h4>Chi Siamo</h4></a>
               </li>
-              <li><a href="/chi_siamo" class="navbar_link">Chi siamo</a></li>
+              <li><a href="team.html" class="navbar_link w-current"><h4>Team</h4></a></li>
+              <li><a href="https://jobs.eagletrt.it/" class="navbar_link"><h4>Jobs</h4></a></li>
+              <li><a href="garage.html" class="navbar_link"><h4>Garage</h4></a></li>
               <li>
-                <a href="/team" aria-current="page" class="navbar_link w--current">Team</a>
+                <a href="Formula_Student.html" class="navbar_link"><h4>Formula Student</h4></a>
               </li>
-              <li><a href="https://jobs.eagletrt.it/" class="navbar_link">Positions</a></li>
-              <li><a href="/garage" class="navbar_link">Garage</a></li>
               <li>
-                <a href="/per_le_aziende" class="navbar_link">Per le aziende</a>
+                <a href="per_le_aziende.html" class="navbar_link"><h4>Partners</h4></a>
               </li>
-              <li><a href="/eventi" class="navbar_link">Eventi</a></li>
-              <li>
-                <a href="/en/team" class="w-inline-block"><img src="./assets/icons/lang/en.png" loading="eager"
-                    width="25" height="25" alt="united kingdom flag" sizes="(max-width: 991px) 100vw, 25px" srcset="
-                        https://uploads-ssl.webflow.com/6401ed150a210b785600a87b/64045545156eb1f3eebb9646_english-p-500.png 500w,
-                        ./assets/icons/lang/en.png                                                                          512w
-                      " /></a>
+              <li><a href="eventi.html" class="navbar_link"><h4>Eventi</h4></a></li>
+              <li >
+                <!-- Bandiera Mobile -->
+                <div  >
+                  <a href="team_en.html">
+                    <img
+                    class="flag-mobile"
+                      src="./assets/icons/lang/en.png"
+                      loading="eager"
+                      width="25"
+                      height="25"
+                      alt="United Kingdom flag"
+                    />
+                  </a>
+                </div>
               </li>
             </ul>
           </nav>
+          <!-- Bandiera Desktop -->
+          <div class="flag-desktop">
+            <a href="team_en.html">
+              <img
+                src="./assets/icons/lang/en.png"
+                loading="eager"
+                width="25"
+                height="25"
+                alt="United Kingdom flag"
+              />
+            </a>
+          </div>
           <div class="menu-button w-nav-button">
             <!-- <div class="w-icon-nav-menu"></div> -->
-            <img src="./assets/icons/menu.png" loading="lazy" alt="" height="20" width="20" />
+            <img
+              src="./assets/icons/menu.png"
+              loading="lazy"
+              alt="menu icon"
+              height="20"
+              width="20"
+            />
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
   <br>
@@ -113,11 +159,10 @@
       <h2 class="heading_template">Il nostro team</h2>
       <div class="text-block_template">
         Il nostro team è composto da studentesse e studenti frequentanti diversi facoltà
-        dell’<strong>Università di Trento</strong>. Oggi siamo circa 90
-        studenti che lavorano insieme sviluppando competenze di soft e hard
-        <strong>skills</strong>, preparandoci ad affrontare l'ambiente del
-        lavoro subito dopo la <strong>laurea</strong>. <br /><br>
-        Se anche tu sei uno studente UniTN e hai voglia di
+        dell’<strong>Università di Trento</strong>. Oggi siamo circa <strong>90 membri</strong> che lavorano insieme sviluppando competenze di soft e hard
+        skills, preparandoci ad affrontare l'ambiente del
+        lavoro subito dopo la laurea. <br /><br>
+        Se anche tu sei uno studente UniTn e hai voglia di
         <strong>lavorare</strong> <strong>insieme</strong> a noi per
         progettare, produrre, testare e gareggiare con un'auto da corsa nelle
         competizioni di Formula Student, devi assolutamente unirti al team E-Agle!
@@ -326,7 +371,7 @@
             <div class="name">Alessandro Bridi</div>
             <div class="name">Angelo Nutu</div>
             <div class="name">Davide Andreolli</div>
-            <div class="name">Dimitri Corradini</div>
+            <div class="name">Dimitri Corraini</div>
             <div class="name">Dorijan Di Zepp</div>
             <div class="name">Ettore Beltrame</div>
             <div class="name">Filippo Faccini</div>
@@ -381,7 +426,7 @@
             <div class="name">Elias Moreno</div>
             <div class="name">Elisa Pavone</div>
             <div class="name">Federico Battisti</div>
-            <div class="name">Gabriel Macedo Liberat</div>
+            <div class="name">Gabriel Macedo Liberato</div>
             <div class="name">Manar El Hali</div>
             <div class="name">Marco Ferronato</div>
             <div class="name">Marco Turri</div>
@@ -473,7 +518,7 @@
         <h2 class="heading_team">Il progetto driverless</h2>
         <div class="text-block_template">
           Il progetto driverless è portato avanti da membri delle diverse
-          divisioni, che lavorano insieme per trasformare Fenice EVO in una
+          divisioni, che lavorano insieme per trasformare la nostra auto in una
           monoposto a guida autonoma. L&#x27;auto deve essere in grado di
           riconoscere un tracciato predefinito, delimitato da una serie di
           coni regolamentari, per poi completarlo il più velocemente
